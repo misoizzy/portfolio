@@ -144,9 +144,9 @@
 
       <!-- 7. Hauynite — 2019 -->
       <div class="pcard fade-in" onclick="openModal('hauynite')">
-        <div class="pcard-thumb" style="background-image:linear-gradient(to bottom,rgba(10,20,60,.3) 0%,rgba(10,20,60,.78) 100%),url(hauynite_visual.jpg);background-size:cover;background-position:center top">
+        <div class="pcard-thumb" style="background-image:linear-gradient(to bottom,rgba(10,20,60,.3) 0%,rgba(10,20,60,.78) 100%),url(hauynite_flea.jpg);background-size:cover;background-position:center top">
           <span class="pcard-thumb-yr">2019</span>
-          <span class="pcard-thumb-tag">Brand Strategy · Sponsorship</span>
+          <span class="pcard-thumb-tag">Brand Strategy · Sponsorship · Event Planning</span>
         </div>
         <div class="pcard-body">
           <div class="pcard-org">Hauynite Sports Agency</div>
@@ -159,7 +159,7 @@
 
       <!-- 8. J&J Media — 2018 -->
       <div class="pcard fade-in" onclick="openModal('jj')">
-        <div class="pcard-thumb" style="background-image:linear-gradient(to bottom,rgba(10,5,5,.2) 0%,rgba(10,5,5,.82) 100%),url(jj_onsite.jpg);background-size:cover;background-position:center top">
+        <div class="pcard-thumb" style="background-image:linear-gradient(to bottom,rgba(10,5,5,.2) 0%,rgba(10,5,5,.82) 100%),url(jj_article.jpg);background-size:cover;background-position:center top">
           <span class="pcard-thumb-yr">2018</span>
           <span class="pcard-thumb-tag">Sports Media · Research · Published Article</span>
         </div>
@@ -474,37 +474,60 @@ const modals = {
   },
 
   hauynite: {
-    tag: 'Sports Agency Internship · 2019',
-    title: 'National Team Sponsorship & Corporate Branding Proposals',
-    org: 'Hauynite Sports Agency',
+    tag: 'Sports Agency Internship · Brand Strategy · 2019',
+    title: 'Corporate Branding Proposal — Hauynite Futsal Park × 뽈인러브 팀',
+    org: 'Hauynite Sports Agency · 안산',
     body: `
       <div class="modal-section">
-        <img src="hauynite_visual.jpg" alt="Hauynite proposal slides" style="width:100%;border-radius:10px;margin-bottom:.5rem;display:block" />
+        <img src="hauynite_cover.jpg" alt="뽈인러브팀 기업브랜딩 제안서 cover" style="width:100%;border-radius:10px;margin-bottom:.5rem;display:block" />
+        <div style="font-size:.72rem;color:var(--grey);text-align:center;margin-top:.3rem">뽈인러브팀 기업브랜딩 제안서 — "어서와, 이런 풋살장은 처음이지?"</div>
       </div>
       <div class="modal-section">
-        <div class="ms-title">Context</div>
-        <p class="ms-p">Hauynite is a Korean sports agency representing national-level athletes. During my internship, I was responsible for writing the two core proposal types the agency uses with brands and event organizers.</p>
+        <div class="ms-title">Project Overview</div>
+        <p class="ms-p"><strong>뽈인러브 팀</strong> produced a full corporate branding proposal for <strong>Hauynite Sports Agency's futsal facility</strong> in Ansan, Gyeonggi-do. The proposal aimed to transform the futsal park from a simple rental business into a multi-purpose branded event space — generating new revenue streams and building Hauynite's local brand equity.</p>
+        <p class="ms-p">Core concept: <strong>화합 (Harmony)</strong> — uniting the multicultural community of Ansan through sport and culture.</p>
       </div>
       <div class="modal-section">
-        <div class="ms-title">Project 1 — Athlete Sponsorship Proposals</div>
-        <div class="ms-grid">
-          <div class="ms-card"><div class="ms-card-icon">⚽</div><div class="ms-card-title">Athletes</div><div class="ms-card-desc">3 national women's soccer players: Jo So-hyeon, Kim Jung-mi, Park Jeong-ah — selected brand partners based on athlete persona fit and brand category research.</div></div>
-          <div class="ms-card"><div class="ms-card-icon">🔍</div><div class="ms-card-title">Research Process</div><div class="ms-card-desc">Researched cosmetics and skincare brands for women. Gathered objective data from government statistical databases and the national corporate disclosure database to support proposals.</div></div>
-          <div class="ms-card"><div class="ms-card-icon">📊</div><div class="ms-card-title">SPSS Analysis</div><div class="ms-card-desc">Used SPSS to run statistical analysis on market data — turning numbers into persuasive narrative within the proposal documents.</div></div>
-          <div class="ms-card"><div class="ms-card-icon">📄</div><div class="ms-card-title">Deliverable</div><div class="ms-card-desc">Full sponsorship decks per athlete: brand selection rationale, product usage plans, expected marketing effect, and visual reporting layout.</div></div>
+        <div class="ms-title">Situation Analysis — Hauynite Facility</div>
+        <img src="hauynite_facility.jpg" alt="Hauynite facility and environment analysis" style="width:100%;border-radius:10px;margin-bottom:.5rem;display:block" />
+        <div class="ms-grid" style="margin-top:.8rem">
+          <div class="ms-card"><div class="ms-card-icon">🏟️</div><div class="ms-card-title">3 Futsal Fields</div><div class="ms-card-desc">Capacity ~1,000 people. Located directly in front of a school — high daily foot traffic of students and families.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">⚽</div><div class="ms-card-title">Youth Tournament Track Record</div><div class="ms-card-desc">Successfully hosted the 1st Hauynite Sports Cup (National Youth Soccer Tournament) in 2019 — already proven as an event venue.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🌏</div><div class="ms-card-title">Ansan Multicultural Context</div><div class="ms-card-desc">Ansan has 80,000+ foreign residents (China, Uzbekistan, Vietnam, Russia, etc.) and hosts the Ansan International Street Arts Festival (700,000+ visitors/year). A festival format naturally fits the community.</div></div>
         </div>
       </div>
       <div class="modal-section">
-        <div class="ms-title">Project 2 — Corporate Branding Event Proposal</div>
-        <p class="ms-p">Designed a corporate branding proposal for an <strong>outdoor flea market + futsal tournament event in Ansan city</strong>:</p>
+        <div class="ms-title">Prior Success — Flea Market Event</div>
+        <img src="hauynite_flea.jpg" alt="Hauynite flea market event" style="width:100%;border-radius:10px;margin-bottom:.5rem;display:block" />
+        <p class="ms-p" style="font-size:.8rem;color:var(--grey)">Hauynite previously ran a flea market with local residents (안산맘스 collaboration) — ~1,000 visitors on the day, sellers paid ₩50,000/4hr. This proved the field's multi-use potential and became the evidence base for this expanded proposal.</p>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Event Plan — Space Utilization</div>
+        <img src="hauynite_space.jpg" alt="Space layout plan" style="width:100%;border-radius:10px;margin-bottom:.5rem;display:block" />
+        <p class="ms-p">Three zones running simultaneously across all 3 futsal fields:</p>
         <div class="ms-grid">
-          <div class="ms-card"><div class="ms-card-icon">🏙️</div><div class="ms-card-title">Market Environment Analysis</div><div class="ms-card-desc">PESTLE-style environmental analysis of the Ansan market. Identified target demographics and competitive landscape for the event format.</div></div>
-          <div class="ms-card"><div class="ms-card-icon">💰</div><div class="ms-card-title">Budget Plan</div><div class="ms-card-desc">Detailed event budget covering venue, logistics, marketing, staff, and contingency — presented in a client-ready financial summary.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">⚽</div><div class="ms-card-title">Futsal Tournament (10:00–20:00)</div><div class="ms-card-desc">3 age groups: Kids (9–13), Teens (14–19), Adults (19+). 6v6 tournament, 8 teams per bracket, ₩130,000/team entry fee. Prize: ₩300,000 cash for winners.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🍜</div><div class="ms-card-title">Food Truck Zone (14:00–20:00)</div><div class="ms-card-desc">6–8 food trucks serving multicultural cuisine: kebabs, pho, tacos, takoyaki, Turkish ice cream, skewers, and more — matching Ansan's international resident profile.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🛍️</div><div class="ms-card-title">Flea Market (14:00–18:00)</div><div class="ms-card-desc">Sellers: sports gear, uniforms, flowers, handmade goods, caricatures, calligraphy, crafts, and more. Table/chair rental or mat distribution for buyers.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🎯</div><div class="ms-card-title">Events / Picnic Zone (10:00–20:00)</div><div class="ms-card-desc">Paid events (₩2,000): 5x5 Bingo shoot, Soccer Curling, Couple Lifting, Speed Shoot. Free zone: face painting, busking, balloon art. Photo wall and neon sign installations.</div></div>
         </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Budget Plan</div>
+        <img src="hauynite_budget.jpg" alt="Budget breakdown table" style="width:100%;border-radius:10px;margin-bottom:.5rem;display:block" />
+        <div class="ms-data-row" style="margin-top:.8rem">
+          <div class="ms-data-card"><div class="ms-data-num">₩5.87M</div><div class="ms-data-lbl">Total projected revenue</div></div>
+          <div class="ms-data-card"><div class="ms-data-num">₩1.94M</div><div class="ms-data-lbl">Total event costs</div></div>
+          <div class="ms-data-card"><div class="ms-data-num">₩3.93M</div><div class="ms-data-lbl">Net profit (projected)</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Partner Companies Proposed</div>
+        <p class="ms-p" style="font-size:.82rem;color:var(--grey)">TLX PASS · Naturalize · 루카스포츠 · 자이크로 (sports apparel) · 안산시 다문화 지원 본부 · 쩍컴퍼니 (futsal booking app) · 슛포러브 (YouTube sports channel) · BNB (food truck booking) · 안산 local Facebook pages</p>
       </div>
       <div class="modal-section">
         <div class="ms-title">Skills Applied</div>
-        <div class="ms-tags"><span class="ms-tag">Sponsorship Strategy</span><span class="ms-tag">Proposal Writing</span><span class="ms-tag">SPSS</span><span class="ms-tag">Market Research</span><span class="ms-tag">Budget Planning</span><span class="ms-tag">Brand Analysis</span><span class="ms-tag">Event Planning</span></div>
+        <div class="ms-tags"><span class="ms-tag">Corporate Branding</span><span class="ms-tag">Proposal Writing</span><span class="ms-tag">Event Planning</span><span class="ms-tag">Market Analysis</span><span class="ms-tag">Budget Planning</span><span class="ms-tag">Sponsorship Strategy</span><span class="ms-tag">SPSS</span></div>
       </div>`
   },
 
