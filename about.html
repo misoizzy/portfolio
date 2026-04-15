@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About · Miso Kang</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .about-g{display:grid;grid-template-columns:260px 1fr;gap:3rem;align-items:start}
+    .about-sidebar{background:var(--navy);border-radius:18px;padding:2rem;position:sticky;top:84px}
+    .ab-ava{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--navy3),var(--blue));display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.1rem}
+    .ab-name{font-size:1.1rem;font-weight:700;color:#fff}
+    .ab-role{font-size:.72rem;color:rgba(255,255,255,.35);margin:.12rem 0 1.3rem}
+    .ab-row{display:flex;align-items:flex-start;gap:.55rem;margin-bottom:.65rem}
+    .ab-icon{font-size:.82rem;width:16px;flex-shrink:0;padding-top:2px}
+    .ab-text{font-size:.77rem;color:rgba(255,255,255,.6);line-height:1.4}
+    .ab-sep{border:none;border-top:1px solid rgba(255,255,255,.08);margin:1.2rem 0}
+    .ab-seclbl{font-size:.62rem;letter-spacing:1.4px;text-transform:uppercase;color:rgba(255,255,255,.27);margin-bottom:.55rem}
+    .ab-tags{display:flex;flex-wrap:wrap;gap:.32rem}
+    .ab-tag{font-size:.68rem;padding:.22rem .65rem;border-radius:50px;border:1px solid rgba(255,255,255,.13);color:rgba(255,255,255,.5)}
+    .about-body p{font-size:.94rem;color:var(--grey);line-height:1.85;margin-bottom:1.1rem}
+    .about-body p strong{color:var(--navy);font-weight:600}
+    .about-3{display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem;margin-top:1.8rem}
+    .a3card{background:var(--cream);border:1px solid var(--border);border-radius:12px;padding:1.2rem}
+    .a3icon{font-size:1.3rem;margin-bottom:.55rem}
+    .a3title{font-size:.82rem;font-weight:700;color:var(--navy);margin-bottom:.3rem}
+    .a3desc{font-size:.74rem;color:var(--grey);line-height:1.6}
+    /* skills grid */
+    .skills-g{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+    @media(max-width:960px){
+      .about-g{grid-template-columns:1fr}
+      .about-sidebar{position:static}
+      .about-3{grid-template-columns:repeat(2,1fr)}
+      .skills-g{grid-template-columns:1fr}
+    }
+    @media(max-width:600px){.about-3{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+<!-- NAV -->
+<nav>
+  <a class="logo" href="index.html">Miso<span>.</span></a>
+  <ul class="nav-ul" id="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="work.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="burger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-hero">
+  <div class="w">
+    <div class="ph-breadcrumb">Home <span>/</span> About</div>
+    <h1 class="ph-title">About <em>Miso Kang</em></h1>
+    <p class="ph-sub">Marketer based in Vancouver. Specialist in performance advertising, brand proposals, and ad creative design.</p>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section section--cream">
+  <div class="w">
+    <div class="about-g">
+      <div class="about-sidebar">
+        <div class="ab-ava">🎯</div>
+        <div class="ab-name">Miso Kang</div>
+        <div class="ab-role">Miso Kang · 1999 · Vancouver, BC</div>
+        <div class="ab-row"><span class="ab-icon">📧</span><span class="ab-text">yejin263437@gmail.com</span></div>
+        <div class="ab-row"><span class="ab-icon">📞</span><span class="ab-text">+1 672 980 2122</span></div>
+        <div class="ab-row"><span class="ab-icon">📍</span><span class="ab-text">Vancouver, BC, Canada</span></div>
+        <div class="ab-row"><span class="ab-icon">📸</span><span class="ab-text">@mi_soizzy</span></div>
+        <div class="ab-sep"></div>
+        <div class="ab-seclbl">Interests</div>
+        <div class="ab-tags">
+          <span class="ab-tag">Instruments</span><span class="ab-tag">Travel</span>
+          <span class="ab-tag">Sports</span><span class="ab-tag">Video editing</span>
+        </div>
+      </div>
+      <div class="about-body">
+        <p class="slabel">Background</p>
+        <h2 class="stitle">Sports gave me instinct.<br>Business gave me <em>method.</em></h2>
+        <hr class="rule" />
+        <p>I graduated from <strong>Paichai University (2022)</strong> with a double major in Leisure Sports and Business Administration. Sport taught me how people emotionally connect with brands. Business gave me the vocabulary to turn that into strategy.</p>
+        <p>At <strong>V WORKS (VMARK)</strong>, a Daejeon-based ad agency, I build Meta and <span class="nv">Naver</span> campaign proposals for food franchise clients, run the ads, track weekly performance, and write monthly reports that explain why the numbers moved — not just what they were.</p>
+        <p>Currently enrolled in a <strong>Co-op Digital Marketing Program at Cornerstone College, Vancouver</strong> — refining my approach to SEO, content strategy, SMART goal-setting, buyer personas, and brand architecture, all in an English-language environment.</p>
+        <div class="about-3">
+          <div class="a3card">
+            <div class="a3icon">📊</div>
+            <div class="a3title">Data-first</div>
+            <div class="a3desc">GAIQ &amp; Hootsuite certified. I track campaigns weekly and adjust based on what the numbers actually say.</div>
+          </div>
+          <div class="a3card">
+            <div class="a3icon">🎨</div>
+            <div class="a3title">Design-capable</div>
+            <div class="a3desc">GTQ Level 1 in Photoshop &amp; Illustrator. I design ad creatives myself — no briefing delay, no design bottleneck.</div>
+          </div>
+          <div class="a3card">
+            <div class="a3icon">📝</div>
+            <div class="a3title">Proposal-driven</div>
+            <div class="a3desc">From brand research to budget plans, I write proposals from scratch backed by real data and clear rationale.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="w">
+    <p class="slabel">Skills</p>
+    <h2 class="stitle">Tools &amp; <em>expertise</em></h2>
+    <hr class="rule" />
+    <div class="skills-g">
+      <div>
+        <p class="sg-lbl">Creative Tools</p>
+        <div class="bar-item"><div class="bar-head"><span class="bar-name">Adobe Photoshop</span><span class="bar-pct">90%</span></div><div class="bar-track"><div class="bar-fill" style="--w:90%"></div></div></div>
+        <div class="bar-item"><div class="bar-head"><span class="bar-name">Adobe Illustrator</span><span class="bar-pct">80%</span></div><div class="bar-track"><div class="bar-fill" style="--w:80%"></div></div></div>
+        <div class="bar-item"><div class="bar-head"><span class="bar-name">PowerPoint</span><span class="bar-pct">90%</span></div><div class="bar-track"><div class="bar-fill" style="--w:90%"></div></div></div>
+        <div class="bar-item"><div class="bar-head"><span class="bar-name">Excel</span><span class="bar-pct">80%</span></div><div class="bar-track"><div class="bar-fill" style="--w:80%"></div></div></div>
+        <p class="sg-lbl" style="margin-top:1.8rem">Marketing &amp; Analytics</p>
+        <div class="bar-item"><div class="bar-head"><span class="bar-name">Meta Ads Manager</span><span class="bar-pct">75%</span></div><div class="bar-track"><div class="bar-fill" style="--w:75%"></div></div></div>
+        <div class="bar-item"><div class="bar-head"><span class="bar-name">Google Ads (GDN)</span><span class="bar-pct">70%</span></div><div class="bar-track"><div class="bar-fill" style="--w:70%"></div></div></div>
+        <div class="bar-item"><div class="bar-head"><span class="bar-name"><span class="nv">Naver</span> Search Ads</span><span class="bar-pct">70%</span></div><div class="bar-track"><div class="bar-fill" style="--w:70%"></div></div></div>
+        <div class="bar-item"><div class="bar-head"><span class="bar-name">Google Analytics (GAIQ)</span><span class="bar-pct">70%</span></div><div class="bar-track"><div class="bar-fill" style="--w:70%"></div></div></div>
+        <div class="bar-item"><div class="bar-head"><span class="bar-name">SPSS</span><span class="bar-pct">60%</span></div><div class="bar-track"><div class="bar-fill" style="--w:60%"></div></div></div>
+        <p class="sg-lbl" style="margin-top:1.8rem">Platforms &amp; Tools</p>
+        <div class="tools-wrap">
+          <span class="tool">Naver DataLab</span><span class="tool">Google Trends</span>
+          <span class="tool">Kakao DataTrend</span><span class="tool">GDN</span>
+          <span class="tool">YouTube Ads</span><span class="tool">Hootsuite</span>
+          <span class="tool">Lightroom</span><span class="tool">Hancom Office</span>
+        </div>
+      </div>
+      <div>
+        <p class="sg-lbl">Certifications</p>
+        <div class="cert-list">
+          <div class="cert-row"><div><div class="cert-name">Social Media Marketing</div><div class="cert-org">Hootsuite Academy · No. 179205263</div></div><span class="cert-yr">2026</span></div>
+          <div class="cert-row"><div><div class="cert-name">GAIQ — Google Analytics Individual Qualification</div><div class="cert-org">Google</div></div><span class="cert-yr">2021</span></div>
+          <div class="cert-row"><div><div class="cert-name">GTQ Graphic Technology Qualification Level 1</div><div class="cert-org">Korea Productivity Center (KPC)</div></div><span class="cert-yr">2020</span></div>
+          <div class="cert-row"><div><div class="cert-name">GTQ Illustration Level 1</div><div class="cert-org">Korea Productivity Center (KPC)</div></div><span class="cert-yr">2021</span></div>
+          <div class="cert-row"><div><div class="cert-name">MOS Excel 2016 Expert</div><div class="cert-org">YBM / Microsoft</div></div><span class="cert-yr">2021</span></div>
+          <div class="cert-row"><div><div class="cert-name">MOS PowerPoint 2016 · Word Expert</div><div class="cert-org">Microsoft</div></div><span class="cert-yr">2021</span></div>
+          <div class="cert-row"><div><div class="cert-name">CS Leaders Certificate</div><div class="cert-org">Korea Information Evaluation Association</div></div><span class="cert-yr">2021</span></div>
+          <div class="cert-row"><div><div class="cert-name">MICE Digital Planning Specialist</div><div class="cert-org">Korea MICE Association</div></div><span class="cert-yr">2021</span></div>
+          <div class="cert-row"><div><div class="cert-name">Korean History Proficiency Exam Level 1</div><div class="cert-org">National Institute of Korean History</div></div><span class="cert-yr">2020</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section class="section section--cream">
+  <div class="w">
+    <p class="slabel">Awards</p>
+    <h2 class="stitle">Recognition</h2>
+    <hr class="rule" />
+    <div class="awards-g">
+      <div class="aw-card fade-in"><div class="aw-yr">2019</div><div class="aw-title">Sports Marketing Content Planning Competition — Excellence Award</div><div class="aw-org">Korea New Media Distribution Industry Association</div></div>
+      <div class="aw-card fade-in"><div class="aw-yr">2021</div><div class="aw-title">Youth Employment Policy Essay Competition — Encouragement Award</div><div class="aw-org">Ministry of Employment &amp; Labor</div></div>
+      <div class="aw-card fade-in"><div class="aw-yr">2018</div><div class="aw-title">Naseom Character Reading Certification — Encouragement Award</div><div class="aw-org">Paichai University</div></div>
+    </div>
+  </div>
+</section>
+
+</div><!-- /page-wrap -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="fl">Miso<span>.</span></div>
+  <p class="fc">© 2026 Miso Kang. All rights reserved.</p>
+  <nav class="flinks">
+    <a href="index.html">Home</a><a href="work.html">Experience</a>
+    <a href="projects.html">Projects</a><a href="contact.html">Contact</a>
+  </nav>
+</footer>
+<button class="back-top" id="bt" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+function toggleNav(){document.getElementById('nav').classList.toggle('open')}
+addEventListener('scroll',()=>document.getElementById('bt').classList.toggle('show',scrollY>400));
+// skill bars animate on scroll
+const bars=document.querySelectorAll('.bar-fill');
+const bio=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')})},{threshold:.3});
+bars.forEach(b=>bio.observe(b));
+// fade in
+const fio=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');fio.unobserve(e.target)}})},{threshold:.08});
+document.querySelectorAll('.fade-in').forEach(el=>fio.observe(el));
+</script>
+</body>
+</html>

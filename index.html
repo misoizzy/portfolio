@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miso Kang · Marketing Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ─── HERO ─── */
+    #hero{min-height:100vh;background:var(--navy);display:flex;align-items:center;padding:80px 6% 70px;position:relative;overflow:hidden}
+    #hero::before{content:'';position:absolute;top:-100px;right:-60px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(91,143,212,.07) 0%,transparent 70%);pointer-events:none}
+    #hero::after{content:'';position:absolute;bottom:-120px;left:-80px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(30,64,128,.12) 0%,transparent 70%);pointer-events:none}
+    .hero-wrap{max-width:1100px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 340px;gap:70px;align-items:center;position:relative}
+    .hero-tag{display:inline-flex;align-items:center;gap:7px;font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--blue-lt);margin-bottom:1.2rem}
+    .hero-tag::before{content:'';width:22px;height:1.5px;background:var(--blue-lt)}
+    h1{font-family:'DM Serif Display',serif;font-size:clamp(2.4rem,4.8vw,3.8rem);color:#fff;line-height:1.1;margin-bottom:1.4rem}
+    h1 em{font-style:italic;color:var(--blue)}
+    .hero-desc{font-size:.97rem;color:rgba(255,255,255,.58);max-width:440px;line-height:1.85;margin-bottom:2rem}
+    .btns{display:flex;gap:.85rem;flex-wrap:wrap}
+    .hero-note{margin-top:2.4rem;padding-top:1.8rem;border-top:1px solid rgba(255,255,255,.08);display:flex;gap:2.5rem;flex-wrap:wrap}
+    .hn-val{font-size:1.6rem;font-weight:800;color:#fff;line-height:1}
+    .hn-val span{color:var(--blue);font-size:1rem}
+    .hn-lbl{font-size:.65rem;color:rgba(255,255,255,.35);margin-top:.3rem;text-transform:uppercase;letter-spacing:.9px}
+    /* hero card */
+    .hero-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:1.8rem}
+    .hc-top{display:flex;align-items:center;gap:.9rem;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid rgba(255,255,255,.07)}
+    .hc-avatar{width:46px;height:46px;border-radius:12px;overflow:hidden;flex-shrink:0}
+    .hc-avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .hc-name{font-size:.97rem;font-weight:700;color:#fff}
+    .hc-role{font-size:.72rem;color:rgba(255,255,255,.38);margin-top:.1rem}
+    .hc-row{display:flex;justify-content:space-between;align-items:center;padding:.7rem 0;border-bottom:1px solid rgba(255,255,255,.06)}
+    .hc-row:last-child{border-bottom:none}
+    .hc-k{font-size:.66rem;color:rgba(255,255,255,.32);text-transform:uppercase;letter-spacing:1px}
+    .hc-v{font-size:.78rem;color:rgba(255,255,255,.78);font-weight:500;text-align:right}
+    .dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#52c982;margin-right:4px;vertical-align:middle;animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+    /* ─── HIGHLIGHTS ─── */
+    #highlights{background:var(--white);padding:60px 6%}
+    .hl-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+    .hl-card{border:1px solid var(--border);border-radius:14px;padding:1.6rem;position:relative;overflow:hidden}
+    .hl-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy3),var(--blue))}
+    .hl-num{font-family:'DM Serif Display',serif;font-size:2.2rem;color:var(--navy);line-height:1;margin-bottom:.4rem}
+    .hl-num span{font-size:1.1rem;color:var(--blue)}
+    .hl-label{font-size:.77rem;font-weight:600;color:var(--navy);margin-bottom:.2rem}
+    .hl-sub{font-size:.7rem;color:var(--grey);line-height:1.5}
+
+    /* ─── FEATURED SECTIONS ─── */
+    #featured{padding:80px 6%;background:var(--cream)}
+    .featured-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem}
+    .feat-card{border-radius:16px;overflow:hidden;border:1px solid var(--border)}
+    .feat-card-header{padding:2rem;position:relative;overflow:hidden}
+    .feat-card-header::before{content:'';position:absolute;inset:0;background:inherit;z-index:-1}
+    .fch-navy{background:var(--navy)}
+    .fch-white{background:var(--white)}
+    .feat-tag{font-size:.65rem;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--blue-lt);margin-bottom:.65rem}
+    .feat-title{font-family:'DM Serif Display',serif;font-size:1.25rem;color:#fff;line-height:1.28;margin-bottom:.7rem}
+    .feat-title--dark{color:var(--navy)}
+    .feat-sub{font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.75}
+    .feat-sub--dark{color:var(--grey)}
+    .feat-body{padding:1.5rem 2rem 2rem;background:var(--white)}
+    .feat-body--navy{background:rgba(255,255,255,.04);border-top:1px solid rgba(255,255,255,.08)}
+    .mini-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;margin-bottom:1.2rem}
+    .mini-stat{background:rgba(255,255,255,.06);border-radius:9px;padding:.9rem;text-align:center;border:1px solid rgba(255,255,255,.08)}
+    .mini-stat-val{font-family:'DM Serif Display',serif;font-size:1.4rem;color:#fff;line-height:1}
+    .mini-stat-val span{font-size:.8rem;color:var(--blue-lt)}
+    .mini-stat-lbl{font-size:.64rem;color:rgba(255,255,255,.38);margin-top:.25rem}
+    .feat-link{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:700;color:var(--blue-lt);margin-top:.3rem}
+    .feat-link::after{content:'→';transition:transform .2s}
+    .feat-link:hover::after{transform:translateX(4px)}
+    .feat-link--dark{color:var(--navy3)}
+    .proj-mini-list{display:flex;flex-direction:column;gap:.6rem}
+    .pml-item{display:flex;align-items:center;gap:.8rem;padding:.7rem .9rem;background:var(--cream);border-radius:8px;border:1px solid var(--border);transition:.2s}
+    .pml-item:hover{border-color:var(--navy3)}
+    .pml-dot{width:8px;height:8px;border-radius:50%;background:var(--navy3);flex-shrink:0}
+    .pml-name{font-size:.8rem;font-weight:600;color:var(--navy)}
+    .pml-cat{font-size:.68rem;color:var(--grey);margin-left:auto}
+
+    /* ─── ABOUT PREVIEW ─── */
+    #about-preview{padding:80px 6%;background:var(--white)}
+    .ap-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+    .ap-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0}
+    .ap-tag{font-size:.74rem;font-weight:600;padding:.3rem .85rem;border-radius:6px;background:var(--cream);border:1px solid var(--border);color:var(--navy2)}
+    @media(max-width:900px){
+      .hero-wrap{grid-template-columns:1fr}.hero-card{display:none}
+      .hl-grid{grid-template-columns:repeat(2,1fr)}
+      .featured-grid,.ap-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:640px){.hl-grid{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="logo" href="index.html">Miso<span>.</span></a>
+  <ul class="nav-ul" id="nav">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="work.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="burger" id="burger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-wrap">
+    <div>
+      <div class="hero-tag">Digital Marketer · Vancouver, BC</div>
+      <h1>Marketing that moves<br>numbers — and <em>people.</em></h1>
+      <p class="hero-desc">I'm Miso Kang. I plan and run Meta + <span class="nv">Naver</span> campaigns, write brand proposals backed by real data, and design all the creatives myself. Currently studying digital marketing at Cornerstone College, Vancouver.</p>
+      <div class="btns">
+        <a class="btn btn-fill" href="projects.html">View Projects</a>
+        <a class="btn btn-ghost" href="work.html">Experience</a>
+      </div>
+      <div class="hero-note">
+        <div>
+          <div class="hn-val">3<span>yrs+</span></div>
+          <div class="hn-lbl">Ad Agency</div>
+        </div>
+        <div>
+          <div class="hn-val">223K<span>+</span></div>
+          <div class="hn-lbl">Meta Impressions</div>
+        </div>
+        <div>
+          <div class="hn-val">306K<span>+</span></div>
+          <div class="hn-lbl">Naver Impressions</div>
+        </div>
+        <div>
+          <div class="hn-val">23<span>+</span></div>
+          <div class="hn-lbl">F&B Clients</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hc-top">
+        <div class="hc-avatar"><img src="profile.png" alt="Miso Kang" /></div>
+        <div>
+          <div class="hc-name">Miso Kang</div>
+          <div class="hc-role">Marketing · V WORKS</div>
+        </div>
+      </div>
+      <div class="hc-row"><span class="hc-k">Status</span><span class="hc-v"><span class="dot"></span>Open to offers</span></div>
+      <div class="hc-row"><span class="hc-k">Location</span><span class="hc-v">Vancouver, BC</span></div>
+      <div class="hc-row"><span class="hc-k">Education</span><span class="hc-v">Paichai Univ. '22</span></div>
+      <div class="hc-row"><span class="hc-k">Co-op</span><span class="hc-v">Cornerstone College</span></div>
+      <div class="hc-row"><span class="hc-k">Award</span><span class="hc-v">Sports Mktg Excellence</span></div>
+      <div class="hc-row"><span class="hc-k">Email</span><span class="hc-v">yejin263437@gmail.com</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section id="highlights">
+  <div class="w">
+    <div class="hl-grid">
+      <div class="hl-card fade-in">
+        <div class="hl-num">306K<span>+</span></div>
+        <div class="hl-label">Naver Impressions</div>
+        <div class="hl-sub">0.38% avg. CTR across keyword ad campaigns</div>
+      </div>
+      <div class="hl-card fade-in">
+        <div class="hl-num">223K<span>+</span></div>
+        <div class="hl-label">Meta Impressions</div>
+        <div class="hl-sub">1.21% CTR · 114 lead inquiries from Meta campaigns</div>
+      </div>
+      <div class="hl-card fade-in">
+        <div class="hl-num">23<span>+</span></div>
+        <div class="hl-label">F&B Clients Managed</div>
+        <div class="hl-sub">Franchise, startup, and independent restaurant brands</div>
+      </div>
+      <div class="hl-card fade-in">
+        <div class="hl-num">6<span>+</span></div>
+        <div class="hl-label">Certifications</div>
+        <div class="hl-sub">Hootsuite, GAIQ, GTQ Level 1 (Photoshop + Illustrator), MOS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED WORK -->
+<section id="featured">
+  <div class="w">
+    <p class="slabel">Featured</p>
+    <h2 class="stitle">Selected work &amp; <em>campaigns</em></h2>
+    <div class="featured-grid">
+
+      <!-- V WORKS ad work -->
+      <div class="feat-card">
+        <div class="feat-card-header fch-navy">
+          <div class="feat-tag">Ad Agency · Aug 2023 – Dec 2024</div>
+          <h3 class="feat-title">V WORKS (VMARK) — Performance Advertising</h3>
+          <p class="feat-sub">Meta + <span class="nv">Naver</span> campaign planning, creative design, and weekly reporting for 23+ F&B franchise clients in Korea.</p>
+        </div>
+        <div class="feat-body feat-body--navy" style="background:var(--navy);padding:1.5rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.08)">
+          <div class="mini-stats">
+            <div class="mini-stat"><div class="mini-stat-val">306K<span>+</span></div><div class="mini-stat-lbl">Naver Impressions</div></div>
+            <div class="mini-stat"><div class="mini-stat-val">114<span>+</span></div><div class="mini-stat-lbl">Meta Leads</div></div>
+          </div>
+          <a class="feat-link" href="work.html#vworks">See full campaign detail →</a>
+        </div>
+      </div>
+
+      <!-- Projects preview -->
+      <div class="feat-card">
+        <div class="feat-card-header fch-white">
+          <div class="feat-tag" style="color:var(--blue)">Projects · Internships · Co-op</div>
+          <h3 class="feat-title feat-title--dark">Portfolio Projects</h3>
+          <p class="feat-sub feat-sub--dark">From sports agency sponsorship decks to SEO strategies and brand personas — click any project for full details.</p>
+        </div>
+        <div class="feat-body">
+          <div class="proj-mini-list">
+            <div class="pml-item"><div class="pml-dot"></div><span class="pml-name">Co-op Digital Marketing Program</span><span class="pml-cat">SEO · KPI · Brand</span></div>
+            <div class="pml-item"><div class="pml-dot"></div><span class="pml-name">Hauynite Sports Agency</span><span class="pml-cat">Sponsorship · SPSS</span></div>
+            <div class="pml-item"><div class="pml-dot"></div><span class="pml-name">J&amp;J Media — College Basketball</span><span class="pml-cat">Survey · Editorial</span></div>
+            <div class="pml-item"><div class="pml-dot"></div><span class="pml-name">Dream+ Supporters</span><span class="pml-cat">SNS · Events</span></div>
+          </div>
+          <a class="feat-link feat-link--dark" href="projects.html" style="margin-top:1.2rem;display:inline-flex">All projects →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT PREVIEW -->
+<section id="about-preview">
+  <div class="w">
+    <div class="ap-grid">
+      <div>
+        <p class="slabel">About Me</p>
+        <h2 class="stitle">Sports gave me instinct.<br>Business gave me <em>method.</em></h2>
+        <hr class="rule" />
+        <p style="font-size:.94rem;color:var(--grey);line-height:1.85;margin-bottom:1rem">I graduated from Paichai University with a double major in <strong style="color:var(--navy);font-weight:600">Leisure Sports and Business Administration</strong>. I joined V WORKS (VMARK) in Daejeon as a marketing planner — running Meta and Naver campaigns for 30+ F&B franchise clients, building proposals from scratch, and designing all creatives in-house.</p>
+        <p style="font-size:.94rem;color:var(--grey);line-height:1.85;margin-bottom:1.6rem">Currently enrolled in a co-op digital marketing program at <strong style="color:var(--navy);font-weight:600">Cornerstone College, Vancouver</strong> — sharpening my English-language marketing skills in SEO, content strategy, and brand architecture.</p>
+        <a class="btn btn-outline" href="about.html">Full profile →</a>
+      </div>
+      <div>
+        <div class="ap-tags">
+          <span class="ap-tag">Meta Ads Manager</span>
+          <span class="ap-tag">Naver Search Ads</span>
+          <span class="ap-tag">Google Analytics</span>
+          <span class="ap-tag">SEO &amp; Content Strategy</span>
+          <span class="ap-tag">Adobe Photoshop</span>
+          <span class="ap-tag">Adobe Illustrator</span>
+          <span class="ap-tag">SPSS</span>
+          <span class="ap-tag">Proposal Writing</span>
+          <span class="ap-tag">Buyer Personas</span>
+          <span class="ap-tag">SMART Goals &amp; KPIs</span>
+          <span class="ap-tag">Campaign Reporting</span>
+          <span class="ap-tag">Brand Architecture</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-top:1rem">
+          <div style="background:var(--cream);border:1px solid var(--border);border-radius:12px;padding:1.2rem">
+            <div style="font-size:.65rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--blue);margin-bottom:.5rem">Certifications</div>
+            <div style="font-size:.78rem;font-weight:600;color:var(--navy);margin-bottom:.22rem">Hootsuite Academy</div>
+            <div style="font-size:.72rem;color:var(--grey)">Social Media Marketing</div>
+            <div style="font-size:.72rem;color:var(--grey);margin-top:.5rem">+ GAIQ, GTQ, MOS</div>
+          </div>
+          <div style="background:var(--cream);border:1px solid var(--border);border-radius:12px;padding:1.2rem">
+            <div style="font-size:.65rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--blue);margin-bottom:.5rem">Languages</div>
+            <div style="font-size:.78rem;font-weight:600;color:var(--navy);margin-bottom:.22rem">Korean</div>
+            <div style="font-size:.72rem;color:var(--grey)">Native</div>
+            <div style="font-size:.78rem;font-weight:600;color:var(--navy);margin-top:.5rem">English</div>
+            <div style="font-size:.72rem;color:var(--grey)">Professional working</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fl">Miso<span>.</span></div>
+  <p class="fc">© 2026 Miso Kang. All rights reserved.</p>
+  <nav class="flinks">
+    <a href="about.html">About</a>
+    <a href="work.html">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</footer>
+
+<button class="back-top" id="bt" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+function toggleNav(){
+  document.getElementById('nav').classList.toggle('open');
+}
+addEventListener('scroll',()=>document.getElementById('bt').classList.toggle('show',scrollY>400));
+const fio=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');fio.unobserve(e.target)}})},{threshold:.08});
+document.querySelectorAll('.fade-in').forEach(el=>fio.observe(el));
+</script>
+</body>
+</html>

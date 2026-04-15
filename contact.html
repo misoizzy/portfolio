@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact · Miso Kang</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="page-wrap">
+
+<!-- NAV -->
+<nav>
+  <a class="logo" href="index.html">Miso<span>.</span></a>
+  <ul class="nav-ul" id="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="work.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+  </ul>
+  <div class="burger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-hero">
+  <div class="w">
+    <div class="ph-breadcrumb">Home <span>/</span> Contact</div>
+    <h1 class="ph-title">Let's <em>talk</em></h1>
+    <p class="ph-sub">Open to new opportunities in digital marketing, brand planning, or performance advertising. If something here caught your attention, feel free to reach out.</p>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="section section--cream">
+  <div class="w">
+    <div class="contact-g">
+      <div>
+        <p class="slabel">Get in touch</p>
+        <h2 class="stitle">Say hello, <em>let's connect</em></h2>
+        <hr class="rule" />
+        <div class="ci">
+          <div class="ci-icon">📧</div>
+          <div>
+            <span class="ci-lbl">Email</span>
+            <span class="ci-val">yejin263437@gmail.com</span>
+          </div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon">📞</div>
+          <div>
+            <span class="ci-lbl">Phone</span>
+            <span class="ci-val">+1 672 980 2122</span>
+          </div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon">📍</div>
+          <div>
+            <span class="ci-lbl">Location</span>
+            <span class="ci-val">Vancouver, BC, Canada</span>
+          </div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon">📸</div>
+          <div>
+            <span class="ci-lbl">Instagram</span>
+            <span class="ci-val">@mi_soizzy</span>
+          </div>
+        </div>
+        <div style="margin-top:2rem;padding:1.5rem;background:var(--navy);border-radius:14px">
+          <div style="font-size:.67rem;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:.7rem">Currently</div>
+          <div style="font-size:.9rem;font-weight:600;color:#fff;margin-bottom:.3rem"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#52c982;margin-right:7px;vertical-align:middle"></span>Open to opportunities</div>
+          <div style="font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.7">Based in Vancouver · available for digital marketing roles, freelance campaigns, or remote work.</div>
+        </div>
+      </div>
+      <form class="cform" onsubmit="send(event)">
+        <div class="frow">
+          <div class="fg"><label>Name</label><input type="text" placeholder="Your name" required /></div>
+          <div class="fg"><label>Email</label><input type="email" placeholder="you@company.com" required /></div>
+        </div>
+        <div class="fg"><label>Company / Role</label><input type="text" placeholder="Company or position" /></div>
+        <div class="fg"><label>Subject</label>
+          <select>
+            <option value="">Select a topic</option>
+            <option>Job opportunity</option>
+            <option>Freelance project</option>
+            <option>Collaboration</option>
+            <option>Just saying hi</option>
+          </select>
+        </div>
+        <div class="fg"><label>Message</label><textarea placeholder="Tell me about the opportunity, or just say hi :)" required></textarea></div>
+        <button type="submit" class="submit" id="sb">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</div><!-- /page-wrap -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="fl">Miso<span>.</span></div>
+  <p class="fc">© 2026 Miso Kang. All rights reserved.</p>
+  <nav class="flinks">
+    <a href="index.html">Home</a><a href="about.html">About</a>
+    <a href="work.html">Experience</a><a href="projects.html">Projects</a>
+  </nav>
+</footer>
+<button class="back-top" id="bt" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+function toggleNav(){document.getElementById('nav').classList.toggle('open')}
+addEventListener('scroll',()=>document.getElementById('bt').classList.toggle('show',scrollY>400));
+function send(e){
+  e.preventDefault();
+  const b=document.getElementById('sb');
+  b.textContent='Sent ✓';b.style.background='#1e6b3b';b.disabled=true;
+  setTimeout(()=>{b.textContent='Send Message';b.style.background='';b.disabled=false;e.target.reset()},3000);
+}
+</script>
+</body>
+</html>
