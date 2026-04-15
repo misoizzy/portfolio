@@ -44,7 +44,7 @@
           <div class="ci-icon">📧</div>
           <div>
             <span class="ci-lbl">Email</span>
-            <span class="ci-val">yejin263437@gmail.com</span>
+            <span class="ci-val">Use the contact form →</span>
           </div>
         </div>
         <div class="ci">
@@ -74,14 +74,14 @@
           <div style="font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.7">Based in Vancouver · available for digital marketing roles, freelance campaigns, or remote work.</div>
         </div>
       </div>
-      <form class="cform" onsubmit="send(event)">
+      <form class="cform" action="https://formspree.io/f/yejin263437@gmail.com" method="POST">
         <div class="frow">
-          <div class="fg"><label>Name</label><input type="text" placeholder="Your name" required /></div>
-          <div class="fg"><label>Email</label><input type="email" placeholder="you@company.com" required /></div>
+          <div class="fg"><label>Name</label><input type="text" name="name" placeholder="Your name" required /></div>
+          <div class="fg"><label>Email</label><input type="email" name="email" placeholder="you@company.com" required /></div>
         </div>
-        <div class="fg"><label>Company / Role</label><input type="text" placeholder="Company or position" /></div>
+        <div class="fg"><label>Company / Role</label><input type="text" name="company" placeholder="Company or position" /></div>
         <div class="fg"><label>Subject</label>
-          <select>
+          <select name="subject">
             <option value="">Select a topic</option>
             <option>Job opportunity</option>
             <option>Freelance project</option>
@@ -89,7 +89,7 @@
             <option>Just saying hi</option>
           </select>
         </div>
-        <div class="fg"><label>Message</label><textarea placeholder="Tell me about the opportunity, or just say hi :)" required></textarea></div>
+        <div class="fg"><label>Message</label><textarea name="message" placeholder="Tell me about the opportunity, or just say hi :)" required></textarea></div>
         <button type="submit" class="submit" id="sb">Send Message</button>
       </form>
     </div>
@@ -112,12 +112,6 @@
 <script>
 function toggleNav(){document.getElementById('nav').classList.toggle('open')}
 addEventListener('scroll',()=>document.getElementById('bt').classList.toggle('show',scrollY>400));
-function send(e){
-  e.preventDefault();
-  const b=document.getElementById('sb');
-  b.textContent='Sent ✓';b.style.background='#1e6b3b';b.disabled=true;
-  setTimeout(()=>{b.textContent='Send Message';b.style.background='';b.disabled=false;e.target.reset()},3000);
-}
 </script>
 </body>
 </html>

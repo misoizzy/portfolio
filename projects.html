@@ -127,6 +127,36 @@
         </div>
       </div>
 
+      <!-- 6. 2000 Cigars — 2026 -->
+      <div class="pcard fade-in" onclick="openModal('cigars')">
+        <div class="pcard-thumb" style="background-image:linear-gradient(to bottom,rgba(60,30,5,.25) 0%,rgba(60,30,5,.82) 100%),url(cigar_lp_slide.jpg);background-size:cover;background-position:center top">
+          <span class="pcard-thumb-yr">2026</span>
+          <span class="pcard-thumb-tag">SEO · Landing Page · Digital Strategy</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-org">2000 Cigars · Cornerstone College Co-op Project</div>
+          <h3 class="pcard-title">Digital Growth Strategy — SEO, Landing Page &amp; Content</h3>
+          <p class="pcard-desc">Built SEO strategy, landing page mockup, and blog-driven content plan for Vancouver's only Master Habanos Sommelier — targeting a 5%→13% online sales increase in 6 months.</p>
+          <div class="pcard-tags"><span class="ptag">SEO</span><span class="ptag">Landing Page</span><span class="ptag">Content Strategy</span><span class="ptag">SMART Goals</span></div>
+          <div class="pcard-cta">View details</div>
+        </div>
+      </div>
+
+      <!-- 7. UniSupplePack — 2026 -->
+      <div class="pcard fade-in" onclick="openModal('unisupple')">
+        <div class="pcard-thumb" style="background-image:linear-gradient(to bottom,rgba(30,50,80,.25) 0%,rgba(30,50,80,.82) 100%),url(uni_moodboard.jpg);background-size:cover;background-position:center top">
+          <span class="pcard-thumb-yr">2026</span>
+          <span class="pcard-thumb-tag">Social Media · Brand Strategy · Content</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-org">UniSupplePack · Cornerstone College Co-op Project</div>
+          <h3 class="pcard-title">Social Media Strategy — Platform &amp; Content for a Supplement Brand</h3>
+          <p class="pcard-desc">Built a full social media strategy for a personalized daily supplement brand — platform selection (Instagram + TikTok), competitor audit, brand voice, profile optimization, content calendar, and mood board.</p>
+          <div class="pcard-tags"><span class="ptag">Social Media</span><span class="ptag">Brand Strategy</span><span class="ptag">Content Calendar</span><span class="ptag">Competitor Analysis</span></div>
+          <div class="pcard-cta">View details</div>
+        </div>
+      </div>
+
       <!-- 5. J&J Media — 2018 -->
       <div class="pcard fade-in" onclick="openModal('jj')">
         <div class="pcard-thumb" style="background-image:linear-gradient(to bottom,rgba(20,10,40,.3) 0%,rgba(20,10,40,.78) 100%),url(jj_article.jpg);background-size:cover;background-position:center top">
@@ -210,6 +240,20 @@ const modals = {
         </div>
       </div>
       <div class="modal-section">
+        <div class="ms-title">Google Search Ads</div>
+        <div class="ms-grid">
+          <div class="ms-card"><div class="ms-card-icon">🔎</div><div class="ms-card-title">Keyword Campaigns</div><div class="ms-card-desc">Set up and managed Google Search campaigns targeting franchise-interest keywords in Korea — keyword selection, match types, bid strategy, and Quality Score optimization.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">📋</div><div class="ms-card-title">Ad Copy & Extensions</div><div class="ms-card-desc">Wrote responsive search ads and applied callout + sitelink extensions to maximize SERP real estate and improve CTR for F&B franchise clients.</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">YouTube Shorts Ads</div>
+        <div class="ms-grid">
+          <div class="ms-card"><div class="ms-card-icon">▶️</div><div class="ms-card-title">Short-Form Video Campaigns</div><div class="ms-card-desc">Planned and ran YouTube Shorts in-feed and bumper ad campaigns for F&B franchise clients — coordinating video shoots with the in-house studio team and setting up targeting on Google Ads.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">✂️</div><div class="ms-card-title">Content Repurposing</div><div class="ms-card-desc">Repurposed studio video content into YouTube Shorts format to maximize creative value across platforms — cutting, captioning, and adapting for vertical mobile viewing.</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
         <div class="ms-title">Google Ads — Display Network (GDN)</div>
         <p class="ms-p">Designed and ran Google Display Network campaigns — producing the full banner size set per client (300×250, 728×90, 160×600, 300×600, 320×50) entirely in Photoshop, then setting up targeting and placements on Google Ads. Applied to both agency clients and incubating brands.</p>
         <div class="ms-img-row">
@@ -235,7 +279,7 @@ const modals = {
       </div>
       <div class="modal-section">
         <div class="ms-title">Skills Applied</div>
-        <div class="ms-tags"><span class="ms-tag">Meta Ads Manager</span><span class="ms-tag">Google Ads (GDN)</span><span class="ms-tag">Naver Search Ads</span><span class="ms-tag">Campaign Reporting</span><span class="ms-tag">Ad Creative (Photoshop)</span><span class="ms-tag">Proposal Writing</span><span class="ms-tag">Budget Planning</span></div>
+        <div class="ms-tags"><span class="ms-tag">Meta Ads</span><span class="ms-tag">Google Search Ads</span><span class="ms-tag">GDN</span><span class="ms-tag">YouTube Shorts Ads</span><span class="ms-tag">Naver Search Ads</span><span class="ms-tag">Campaign Reporting</span><span class="ms-tag">Ad Creative (Photoshop)</span><span class="ms-tag">Proposal Writing</span></div>
       </div>`
   },
 
@@ -258,105 +302,15 @@ const modals = {
         </div>
       </div>
       <div class="modal-section">
-        <div class="ms-title">Incubated Brands — Work Samples</div>
+        <div class="ms-title">Incubated Brands — Ad Creative Sample</div>
         <div class="ms-img-row">
-          <div><img src="vw_incub1.jpg" alt="Donggung Jjimdak" class="ms-img"/><div class="ms-img-cap">Donggung Jjimdak — brand campaign planning</div></div>
-          <div><img src="vw_incub2.jpg" alt="Hash Coffee" class="ms-img"/><div class="ms-img-cap">Hash Coffee — go-to-market strategy</div></div>
-        </div>
-        <div class="ms-img-row" style="margin-top:.8rem">
-          <div><img src="vw_incub3.jpg" alt="Pungwol Samgyetang" class="ms-img"/><div class="ms-img-cap">Pungwol Samgyetang — launch campaign</div></div>
-          <div><img src="vw_incub4.jpg" alt="Yangpyeong Haejangguk" class="ms-img"/><div class="ms-img-cap">Yangpyeong Haejangguk — brand setup</div></div>
+          <div><img src="vw_incub_hashcafe.jpg" alt="Hash Coffee final ad creative" class="ms-img"/><div class="ms-img-cap">Hash Coffee — final Meta ad creative (franchise recruitment)</div></div>
+          <div><img src="vw_ad_hashcafe.jpg" alt="Hash Coffee Meta campaign ad" class="ms-img"/><div class="ms-img-cap">Hash Coffee — Meta feed ad (campaign live)</div></div>
         </div>
       </div>
       <div class="modal-section">
         <div class="ms-title">Skills Applied</div>
         <div class="ms-tags"><span class="ms-tag">Brand Strategy</span><span class="ms-tag">Go-to-Market Planning</span><span class="ms-tag">SNS Setup</span><span class="ms-tag">Meta Ads</span><span class="ms-tag">Google Ads (GDN)</span><span class="ms-tag">Ad Creative (Photoshop)</span><span class="ms-tag">Audience Research</span></div>
-      </div>`
-  },
-
-  vworks: {
-    tag: 'Ad Agency · Incubating · Aug 2023 – Dec 2024',
-    title: 'Performance Ad Campaigns & Startup Incubating',
-    org: 'V WORKS (VMARK) · Daejeon',
-    body: `
-      <div class="modal-section">
-        <div class="ms-title">Company Overview</div>
-        <p class="ms-p">V WORKS (VMARK) is a Daejeon-based advertising and brand incubating agency with two divisions: <strong>Ad Agency</strong> — running full-cycle performance campaigns for external F&B franchise clients, and <strong>Incubating</strong> — building and launching in-house startup brands. As the in-house marketer, I own both sides end-to-end: from writing the initial proposal to launching the campaign, monitoring daily performance, and reporting results to clients every week and month.</p>
-      </div>
-      <div class="modal-section">
-        <div class="ms-title">Campaign Performance — Key Numbers</div>
-        <div class="ms-data-row">
-          <div class="ms-data-card"><div class="ms-data-num">306K<span>+</span></div><div class="ms-data-lbl">Naver Impressions</div></div>
-          <div class="ms-data-card"><div class="ms-data-num">0.38<span>%</span></div><div class="ms-data-lbl">Naver Avg. CTR</div></div>
-          <div class="ms-data-card"><div class="ms-data-num">114<span>+</span></div><div class="ms-data-lbl">Meta Lead Inquiries</div></div>
-        </div>
-        <p class="ms-p" style="margin-top:.6rem">All numbers are from live campaigns across 23+ F&B franchise clients — tracked weekly via Naver Ads and Meta Ads Manager. Leads represent actual franchise inquiry forms submitted by prospective business owners through Meta lead ads.</p>
-      </div>
-      <div class="modal-section">
-        <div class="ms-title">What I Do Day-to-Day</div>
-        <div class="ms-grid">
-          <div class="ms-card"><div class="ms-card-icon">📋</div><div class="ms-card-title">Ad Proposal Writing</div><div class="ms-card-desc">Write the full proposal before every campaign — brand research, competitor analysis, target audience definition, platform rationale (Meta / Naver / GDN / YouTube), and budget allocation. Each proposal is built from scratch per client, not templated.</div></div>
-          <div class="ms-card"><div class="ms-card-icon">🎯</div><div class="ms-card-title">Meta Campaign Management</div><div class="ms-card-desc">Set up and run Facebook &amp; Instagram campaigns: audience targeting (age 24–65, nationwide, interest + behavioral layering), creative rotation, budget pacing, and daily monitoring. Optimize targeting mid-flight based on CPL and lead quality.</div></div>
-          <div class="ms-card"><div class="ms-card-icon">🔍</div><div class="ms-card-title"><span class="nv">Naver</span> Keyword Ads</div><div class="ms-card-desc">Research and select keywords, set bids, and monitor rank fluctuations daily. During a 5-week franchise campaign, identified a week-4 CTR drop — diagnosed it as keyword fatigue + competitor bid increase, adjusted immediately and stabilized performance.</div></div>
-          <div class="ms-card"><div class="ms-card-icon">🖥️</div><div class="ms-card-title">Google Ads — GDN Display</div><div class="ms-card-desc">Design and run Google Display Network (GDN) banner campaigns — producing all banner sizes (300×250, 728×90, 160×600, 300×600, 320×50 etc.) from scratch in Photoshop, setting up targeting on Google Ads, and monitoring placements. Applied across both ad agency clients and incubating brands.</div></div>
-          <div class="ms-card"><div class="ms-card-icon">📊</div><div class="ms-card-title">Weekly &amp; Monthly Reporting</div><div class="ms-card-desc">Compile performance tables every week (impressions, clicks, CTR, CPL, total leads) across Meta, Naver, and Google Ads. Monthly reports include trend analysis and cause-and-effect explanations — e.g., lead volume spikes tied to election season ad congestion.</div></div>
-          <div class="ms-card"><div class="ms-card-icon">🎨</div><div class="ms-card-title">Ad Creative Design</div><div class="ms-card-desc">Design all ad visuals myself — Meta feed/story banners, GDN display ads in full size sets, Naver thumbnails, YouTube thumbnails. Managing 20+ clients simultaneously with no separate design team; same-day turnaround for most requests.</div></div>
-        </div>
-      </div>
-      <div class="modal-section">
-        <div class="ms-title">Incubating — In-House Brand Building</div>
-        <p class="ms-p">Beyond client campaigns, I support the incubating division — helping in-house startup brands build their marketing foundation from zero. This means defining the brand's target audience, selecting the right platforms, building the initial SNS presence, and planning the go-to-market campaign. Most incubated brands are in the F&B and lifestyle space; I apply direct learnings from running 23+ franchise client campaigns to help new brands avoid common early-stage mistakes.</p>
-        <div class="ms-grid">
-          <div class="ms-card"><div class="ms-card-icon">🚀</div><div class="ms-card-title">Go-to-Market Strategy</div><div class="ms-card-desc">Define target audience, set channel mix, write the initial brand guidelines, and structure the launch campaign — ensuring the brand has a clear identity and a measurable acquisition path from day one.</div></div>
-          <div class="ms-card"><div class="ms-card-icon">📐</div><div class="ms-card-title">Brand Identity & SNS Setup</div><div class="ms-card-desc">Build the brand's visual tone and SNS profile from scratch — profile copy, initial content plan, posting frequency, and content pillars — before handing off to ongoing operations.</div></div>
-        </div>
-        <div class="ms-img-row" style="margin-top:1rem">
-          <div><img src="vw_incub1.jpg" alt="Donggung Jjimdak" class="ms-img" /><div class="ms-img-cap">Incubating — Donggung Jjimdak brand planning</div></div>
-          <div><img src="vw_incub2.jpg" alt="Hash Coffee" class="ms-img" /><div class="ms-img-cap">Incubating — Hash Coffee brand strategy</div></div>
-        </div>
-        <div class="ms-img-row" style="margin-top:.8rem">
-          <div><img src="vw_incub3.jpg" alt="Pungwol Samgyetang" class="ms-img" /><div class="ms-img-cap">Incubating — Pungwol Samgyetang launch plan</div></div>
-          <div><img src="vw_incub4.jpg" alt="Yangpyeong Haejangguk" class="ms-img" /><div class="ms-img-cap">Incubating — Yangpyeong Haejangguk</div></div>
-        </div>
-      </div>
-      <div class="modal-section">
-        <div class="ms-title">Final Ad Creatives — Live Campaign Samples</div>
-        <p class="ms-p">Every image below is a final ad that ran in an actual live campaign — not a mockup or proposal slide. Designed entirely in Photoshop and Illustrator.</p>
-        <div class="ms-img-row">
-          <div><img src="vw_ad_nyburger.png" alt="New York Burger Meta ad" class="ms-img" /><div class="ms-img-cap">Meta feed ad — New York Burger</div></div>
-          <div><img src="vw_ad_hashcafe.jpg" alt="Hash Coffee Meta ad" class="ms-img" /><div class="ms-img-cap">Meta feed ad — Hash Coffee</div></div>
-        </div>
-        <div class="ms-img-row" style="margin-top:.8rem">
-          <div><img src="vw_ad_tanghuulu.png" alt="Tanghuulu Meta ad" class="ms-img" /><div class="ms-img-cap">Meta feed ad — Tanghuulu franchise</div></div>
-          <div><img src="vw_ad_agujjim.png" alt="Agujjim Meta ad" class="ms-img" /><div class="ms-img-cap">Meta feed ad — Inseang Agujjim</div></div>
-        </div>
-        <div class="ms-img-row" style="margin-top:.8rem">
-          <div><img src="vw_card1.jpg" alt="Card news 1" class="ms-img" /><div class="ms-img-cap">Card news creative — SCK Pasta Mall</div></div>
-          <div><img src="vw_card2.jpg" alt="Card news 2" class="ms-img" /><div class="ms-img-cap">Card news creative — promotional series</div></div>
-        </div>
-        <div class="ms-img-row" style="margin-top:.8rem">
-          <div><img src="vw_gdn_agujjim1.jpg" alt="GDN banner 300x250 type1" class="ms-img" /><div class="ms-img-cap">Google Display (GDN) — 300×250 banner, Inseang Agujjim</div></div>
-          <div><img src="vw_gdn_agujjim2.jpg" alt="GDN banner 300x250 type2" class="ms-img" /><div class="ms-img-cap">Google Display (GDN) — 300×250 banner, type 2</div></div>
-        </div>
-        <div class="ms-img-row" style="margin-top:.8rem">
-          <div><img src="vw_gdn_agujjim3.jpg" alt="GDN half-page banner" class="ms-img" /><div class="ms-img-cap">Google Display (GDN) — 300×600 half-page banner</div></div>
-          <div><img src="vw_meta1.png" alt="Meta creative" class="ms-img" /><div class="ms-img-cap">Meta feed ad — F&B franchise campaign</div></div>
-        </div>
-      </div>
-      <div class="modal-section">
-        <div class="ms-title">Clients Managed</div>
-        <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.2rem">
-          <span class="ms-tag">New York Burger</span><span class="ms-tag">SCK Pasta Mall</span><span class="ms-tag">Daehan Naengmyeon</span>
-          <span class="ms-tag">Daehan Gukbap</span><span class="ms-tag">Namsan Pork Cutlet</span><span class="ms-tag">Lucky Jokbal</span>
-          <span class="ms-tag">Majang-dong Alley</span><span class="ms-tag">Bingsudang</span><span class="ms-tag">Café Dongne</span>
-          <span class="ms-tag">Every Coffee</span><span class="ms-tag">Jjinya Charcoal Chicken</span><span class="ms-tag">Frank Coffin Bar</span>
-          <span class="ms-tag">We Rice</span><span class="ms-tag">Bass Burger</span><span class="ms-tag">Chogye Hanwoo</span>
-          <span class="ms-tag">+ more</span>
-        </div>
-      </div>
-      <div class="modal-section">
-        <div class="ms-title">Skills Applied</div>
-        <div class="ms-tags"><span class="ms-tag">Meta Ads Manager</span><span class="ms-tag">Google Ads (GDN)</span><span class="ms-tag">Naver Keyword Ads</span><span class="ms-tag">YouTube Ads</span><span class="ms-tag">Campaign Reporting</span><span class="ms-tag">Ad Creative (Photoshop)</span><span class="ms-tag">Proposal Writing</span><span class="ms-tag">Brand Research</span><span class="ms-tag">Budget Planning</span><span class="ms-tag">Incubating</span></div>
       </div>`
   },
 
@@ -604,6 +558,127 @@ const modals = {
       <div class="modal-section">
         <div class="ms-title">Skills Applied</div>
         <div class="ms-tags"><span class="ms-tag">Survey Design</span><span class="ms-tag">On-site Research</span><span class="ms-tag">Interview Conducting</span><span class="ms-tag">Data Analysis</span><span class="ms-tag">Editorial Writing</span><span class="ms-tag">Sports Media</span></div>
+      </div>`
+  },
+
+  cigars: {
+    tag: 'SEO & Digital Strategy · 2026',
+    title: 'Digital Growth Strategy — SEO, Landing Page & Content',
+    org: '2000 Cigars · Cornerstone College Co-op Project',
+    body: `
+      <div class="modal-section">
+        <div class="ms-title">SMART Goal</div>
+        <div class="ms-data-row">
+          <div class="ms-data-card"><div class="ms-data-num">5<span>%</span></div><div class="ms-data-lbl">Current online sales share</div></div>
+          <div class="ms-data-card"><div class="ms-data-num">13<span>%</span></div><div class="ms-data-lbl">Target in 6 months</div></div>
+          <div class="ms-data-card"><div class="ms-data-num">+160<span>%</span></div><div class="ms-data-lbl">Online sales growth goal</div></div>
+        </div>
+        <p class="ms-p" style="margin-top:.9rem">2000 Cigars is run by Vancouver's only Master Habanos Sommelier. The brand has strong in-store credibility but minimal online presence. The goal: make the website discoverable and convert organic search traffic into product sales.</p>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">My Role</div>
+        <p class="ms-p">I was the <strong>SEO Specialist</strong> and landing page designer for this project. My deliverables covered the full top-of-funnel: making the brand findable, then converting visitors once they arrived.</p>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">SEO Strategy</div>
+        <div class="ms-grid">
+          <div class="ms-card"><div class="ms-card-icon">🔍</div><div class="ms-card-title">Keyword Research</div><div class="ms-card-desc">Identified high-intent keywords around premium cigars, Vancouver cigar shops, and Habanos brands. Mapped keywords to existing and new pages to close content gaps vs. competitors.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🏷️</div><div class="ms-card-title">On-Page Technical Fixes</div><div class="ms-card-desc">Audited the site structure and flagged missing H1 tags, thin content pages (under 300 words), unoptimized meta descriptions, and image alt text gaps. Wrote actionable fix recommendations per page.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">📝</div><div class="ms-card-title">Blog Content Strategy — "Cigar 101"</div><div class="ms-card-desc">Designed a blog series targeting education-driven search queries — "How to choose a cigar," "What is a Habanos sommelier," "Best cigars for beginners." Each article mapped to a specific keyword cluster and buying-intent stage.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🏙️</div><div class="ms-card-title">Local SEO</div><div class="ms-card-desc">Optimized for "cigar shop Vancouver" and nearby intent queries — Google Business Profile recommendations, NAP consistency, and local citation building.</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Landing Page — Design &amp; Conversion</div>
+        <p class="ms-p">Designed a landing page mockup to capture and convert organic traffic — featuring a lead gen form, product showcase, and brand credibility section (Master Habanos Sommelier certification). Built to minimize bounce and direct visitors toward purchase or inquiry.</p>
+        <div class="ms-img-row">
+          <div><img src="cigar_landing.png" alt="Landing page mockup" class="ms-img"/><div class="ms-img-cap">Landing page mockup — conversion-focused layout</div></div>
+          <div><img src="cigar_blog.png" alt="Blog content design" class="ms-img"/><div class="ms-img-cap">Blog content — "Cigar 101" series design</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Brand &amp; Visual Direction</div>
+        <div class="ms-img-row">
+          <div><img src="cigar_poster.png" alt="Brand poster" class="ms-img"/><div class="ms-img-cap">Brand visual — premium positioning poster</div></div>
+          <div><img src="cigar_strategy.jpg" alt="Strategy overview" class="ms-img"/><div class="ms-img-cap">Digital strategy overview</div></div>
+        </div>
+        <div class="ms-img-row" style="margin-top:.8rem">
+          <div><img src="cigar_mockup1.jpg" alt="Product mockup 1" class="ms-img"/><div class="ms-img-cap">Product mockup — website visual</div></div>
+          <div><img src="cigar_mockup2.jpg" alt="Product mockup 2" class="ms-img"/><div class="ms-img-cap">Product mockup — promotional visual</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Competitive &amp; SWOT Analysis</div>
+        <div class="ms-grid">
+          <div class="ms-card"><div class="ms-card-icon">🔎</div><div class="ms-card-title">Competitor Audit</div><div class="ms-card-desc">Analyzed 3 Vancouver cigar retailers on SEO presence, content depth, keyword rankings, and online sales infrastructure — identifying gaps where 2000 Cigars could outrank on specialist terms.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">📊</div><div class="ms-card-title">SWOT Analysis</div><div class="ms-card-desc">Strengths: unique Habanos sommelier credential. Weakness: low website traffic, thin content. Opportunity: no competitor ranking for education content. Threat: e-commerce limitations on tobacco products in Canada.</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Skills Applied</div>
+        <div class="ms-tags"><span class="ms-tag">SEO Strategy</span><span class="ms-tag">Keyword Research</span><span class="ms-tag">On-Page Optimization</span><span class="ms-tag">Landing Page Design</span><span class="ms-tag">Content Strategy</span><span class="ms-tag">Blog Planning</span><span class="ms-tag">SWOT Analysis</span><span class="ms-tag">Competitor Analysis</span><span class="ms-tag">SMART Goals</span><span class="ms-tag">Local SEO</span></div>
+      </div>`
+  },
+
+  unisupple: {
+    tag: 'Social Media Strategy · 2026',
+    title: 'Social Media Strategy — Platform & Content for a Supplement Brand',
+    org: 'UniSupplePack · Cornerstone College Co-op Project',
+    body: `
+      <div class="modal-section">
+        <div class="ms-title">Brand Overview</div>
+        <p class="ms-p"><strong>UniSupplePack</strong> is a personalized daily supplement subscription for busy 25–35 year olds — office workers and urban professionals who want a simple, effortless wellness routine. One daily pack, pre-portioned and ready to go. The brand message: <em>"One pack. One decision. One habit."</em></p>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">My Roles</div>
+        <div class="ms-grid">
+          <div class="ms-card"><div class="ms-card-icon">✍️</div><div class="ms-card-title">Copywriter / Strategist</div><div class="ms-card-desc">Developed brand messaging, captions, blog content, and storytelling guidelines across platforms. Wrote the brand voice: calm, minimal, effortless — "No pressure. No overthinking. No excess."</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🎨</div><div class="ms-card-title">Designer</div><div class="ms-card-desc">Created social media templates, packaging visual references, brand mood board, and platform-specific visual guidelines. All assets consistent with the clean, minimalist brand direction.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">📊</div><div class="ms-card-title">Social Media Manager</div><div class="ms-card-desc">Built the posting schedule, content calendar structure, community engagement plan, and analytics tracking framework for Instagram and TikTok.</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Target Audience — Buyer Persona</div>
+        <p class="ms-p"><strong>Alex, 26 — office young professional.</strong> Values simplicity, efficiency, and minimal living. Frustrated by vitamin bottle clutter, overwhelmed by supplement research, and guilty about skipping routines. Wants a single, clean solution that fits naturally into his morning without extra thought.</p>
+        <div class="ms-grid">
+          <div class="ms-card"><div class="ms-card-icon">😤</div><div class="ms-card-title">Pain Point 1</div><div class="ms-card-desc">Multiple supplement bottles cluttering the desk. The rattling chaos disrupts his sense of order and increases stress instead of reducing it.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🔁</div><div class="ms-card-title">Pain Point 2</div><div class="ms-card-desc">His routine is too complex to stick with. Guilt from skipped days creates a negative loop — "wellness guilt" → quitting. He wants it effortless enough to be invisible.</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Platform Strategy</div>
+        <div class="ms-grid">
+          <div class="ms-card"><div class="ms-card-icon">📸</div><div class="ms-card-title">Instagram — Primary Platform</div><div class="ms-card-desc">Brand identity, trust-building, and conversion support. Reels and POV-style videos showing daily routines, office desks, gym bags. Profile optimized with SEO-focused bio and consistent visual tone.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">▶️</div><div class="ms-card-title">TikTok — Top-of-Funnel Awareness</div><div class="ms-card-desc">Organic reach and cultural relevance. Problem-solution storytelling: "Multiple bottles vs. one daily pack." Short, relatable, non-pushy — drives brand awareness without hard sales messaging.</div></div>
+        </div>
+        <div class="ms-img-row" style="margin-top:1rem">
+          <div><img src="uni_instagram.jpg" alt="Instagram profile mockup" class="ms-img"/><div class="ms-img-cap">Instagram profile — bio and visual tone optimization</div></div>
+          <div><img src="uni_tiktok.jpg" alt="TikTok profile mockup" class="ms-img"/><div class="ms-img-cap">TikTok profile — discovery-first strategy</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Brand Mood Board &amp; Visual Direction</div>
+        <img src="uni_moodboard.jpg" alt="UniSupplePack mood board" style="width:100%;border-radius:10px;margin-top:.4rem;display:block" />
+        <p class="ms-p" style="margin-top:.6rem">Visual direction: clean whites, muted pastels, minimal photography, human-centered lifestyle imagery. Aesthetic borrowed from Scandinavian wellness — not medical, not aggressive.</p>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Competitor Analysis</div>
+        <div class="ms-grid">
+          <div class="ms-card"><div class="ms-card-icon">🔵</div><div class="ms-card-title">Ritual (Direct Competitor)</div><div class="ms-card-desc">Uses beautiful visuals and clean bottles but feels premium and unapproachable. Relies on ingredient education — creates decision fatigue. UniSupplePack's edge: simpler, friendlier, bottle-free.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🟢</div><div class="ms-card-title">AG1 (Indirect Competitor)</div><div class="ms-card-desc">High-performance positioning with influencer/athlete endorsements. Intimidating for casual buyers. UniSupplePack fills the gap: effortless wellness for everyday busy people, not performance athletes.</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Content Pillars</div>
+        <div class="ms-grid">
+          <div class="ms-card"><div class="ms-card-icon">💡</div><div class="ms-card-title">Pillar 1 — Wellness Without Overload</div><div class="ms-card-desc">Content recognizing the problem: supplement overwhelm, complexity, and guilt loops. Not product-pushy — problem-first.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🌅</div><div class="ms-card-title">Pillar 2 — Morning Routine Lifestyle</div><div class="ms-card-desc">POV-style morning content — desk, gym bag, commute. One pack fitting naturally into a clean, minimalist daily life.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🤝</div><div class="ms-card-title">Pillar 3 — Community &amp; Trust</div><div class="ms-card-desc">User-generated content style, before/after routines, and social proof. Build credibility without hard-sell messaging.</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Skills Applied</div>
+        <div class="ms-tags"><span class="ms-tag">Social Media Strategy</span><span class="ms-tag">Brand Voice</span><span class="ms-tag">Copywriting</span><span class="ms-tag">Platform Analysis</span><span class="ms-tag">Buyer Persona</span><span class="ms-tag">Competitor Analysis</span><span class="ms-tag">Content Calendar</span><span class="ms-tag">Profile Optimization</span><span class="ms-tag">Mood Board</span><span class="ms-tag">Instagram</span><span class="ms-tag">TikTok</span></div>
       </div>`
   }
 };
