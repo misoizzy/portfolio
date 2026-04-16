@@ -77,15 +77,15 @@
 
       <!-- 3. Co-op — 2025 -->
       <div class="pcard fade-in" onclick="openModal('coop')">
-        <div class="pcard-thumb" style="background-image:linear-gradient(to bottom,rgba(13,33,55,.1) 0%,rgba(13,33,55,.72) 100%),url(img_logo.png);background-size:cover;background-position:center">
+        <div class="pcard-thumb" style="background-image:linear-gradient(to bottom,rgba(5,5,5,.15) 0%,rgba(5,5,5,.78) 100%),url(crosscafe_cover.jpg);background-size:cover;background-position:center">
           <span class="pcard-thumb-yr">2025</span>
-          <span class="pcard-thumb-tag">Digital Marketing · Cornerstone College</span>
+          <span class="pcard-thumb-tag">Brand Strategy · SWOT · SEO · Cornerstone Co-op</span>
         </div>
         <div class="pcard-body">
-          <div class="pcard-org">Co-op Digital Marketing Program · Vancouver</div>
-          <h3 class="pcard-title">GA4 Analytics, Email Marketing, SWOT &amp; Brand Strategy</h3>
-          <p class="pcard-desc">Cornerstone College co-op — GA4 dashboard reporting, email drip campaigns, Dr. Pepper SWOT analysis, AI content creation, and Studio Miso personal brand identity. All English-language coursework.</p>
-          <div class="pcard-tags"><span class="ptag">GA4 Analytics</span><span class="ptag">Email Marketing</span><span class="ptag">SWOT</span><span class="ptag">AI Content</span><span class="ptag">Brand Identity</span></div>
+          <div class="pcard-org">Co-op Digital Marketing Program · Cornerstone College · Vancouver</div>
+          <h3 class="pcard-title">Cross Cafe Brand Strategy, Dr. Pepper SWOT &amp; Studio Miso SEO</h3>
+          <p class="pcard-desc">Group &amp; individual projects from Cornerstone College co-op — Cross Cafe brand strategy, Dr. Pepper SWOT + SMART goals, and Studio Miso SEO proposal. All English-language coursework.</p>
+          <div class="pcard-tags"><span class="ptag">Brand Strategy</span><span class="ptag">SWOT Analysis</span><span class="ptag">SMART Goals</span><span class="ptag">SEO</span><span class="ptag">Competitor Analysis</span></div>
           <div class="pcard-cta">View details</div>
         </div>
       </div>
@@ -328,60 +328,63 @@ const modals = {
   },
 
   coop: {
-    tag: 'Co-op Digital Marketing Program · Sep 2025 – Present',
-    title: 'Digital Campaign Strategy, SEO, Social Media & Analytics',
+    tag: 'Co-op Digital Marketing Program · 2025–Present',
+    title: 'Cross Cafe Brand Strategy, Dr. Pepper SWOT & Studio Miso SEO',
     org: 'Cornerstone College · Vancouver, BC',
     body: `
       <div class="modal-section">
-        <div class="ms-title">About the Program</div>
-        <p class="ms-p">A structured digital marketing co-op at Cornerstone College, Vancouver, conducted entirely in English. Each module covers a different discipline — brand strategy, SEO, social media, email marketing, analytics, and AI content — applied to real brand scenarios. The two main capstone projects (2000 Cigars and UniSupplePack) each have their own full case study cards above.</p>
+        <div class="ms-title">Program Overview</div>
+        <p class="ms-p">Structured digital marketing co-op at Cornerstone College, Vancouver — all coursework conducted in English. Projects span brand strategy, competitor analysis, SWOT, SMART goal setting, and SEO, applied to real brand scenarios.</p>
       </div>
 
       <div class="modal-section">
-        <div class="ms-title">Marketing Analytics — GA4</div>
-        <p class="ms-p">Applied GA4 to measure campaign performance — tracking organic vs. paid traffic, conversion funnels, bounce rates, and event tracking. Interpreted data to identify optimization opportunities and wrote an analytics report with actionable recommendations.</p>
+        <img src="crosscafe_cover.jpg" alt="Cross Cafe Final Project" style="width:100%;border-radius:10px;margin-bottom:.5rem;display:block" />
+        <div class="ms-title">Project 1 — Cross Cafe Brand Strategy (Group)</div>
+        <p class="ms-p"><strong>Cross Cafe</strong> is a modern social event café concept designed for young professionals seeking genuine, in-person connections on Vancouver's Davie Street. Group project with teammates Ami, Mei, Nara, Yeji.</p>
+        <div class="ms-img-row" style="margin-top:.8rem">
+          <div><img src="crosscafe_about.jpg" alt="Cross Cafe about" class="ms-img"/><div class="ms-img-cap">"More than just a café — a space for real chemistry"</div></div>
+          <div><img src="crosscafe_competitor.jpg" alt="Competitor analysis" class="ms-img"/><div class="ms-img-cap">Competitor analysis — Starbucks, Bisou, JJ Bean</div></div>
+        </div>
+        <div class="ms-img-row" style="margin-top:.6rem">
+          <div><img src="crosscafe_insight.jpg" alt="Key market insight" class="ms-img"/><div class="ms-img-cap">Key market insights — real connections, inclusive cafés rising</div></div>
+        </div>
+        <div class="ms-grid" style="margin-top:.8rem">
+          <div class="ms-card"><div class="ms-card-icon">🎯</div><div class="ms-card-title">Target Audience</div><div class="ms-card-desc">Ages 25–40, all genders, Vancouver professionals. Visit cafés 3–4x/week, active on social media, want real-world connection over dating apps.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">✍️</div><div class="ms-card-title">Brand Identity</div><div class="ms-card-desc">Slogan: "Cross over to comfort / Coffee first, love follows." Values: authentic connection, emotional honesty, inclusive & diverse, modern & social.</div></div>
+        </div>
+      </div>
+
+      <div class="modal-section">
         <div class="ms-img-row">
-          <div><img src="img_sitemap.png" alt="Studio Miso sitemap" class="ms-img" /><div class="ms-img-cap">Studio Miso — sitemap &amp; SEO structure</div></div>
-          <div><img src="img_vp.png" alt="Value proposition canvas" class="ms-img" /><div class="ms-img-cap">Value proposition canvas — Co-op assignment</div></div>
+          <div><img src="drpepper_cover.jpg" alt="Dr Pepper SWOT" class="ms-img"/><div class="ms-img-cap">Dr. Pepper SWOT Analysis — group project</div></div>
+          <div><img src="drpepper_swot.jpg" alt="Dr Pepper SWOT matrix" class="ms-img"/><div class="ms-img-cap">SWOT matrix — strengths, weaknesses, opportunities, threats</div></div>
+        </div>
+        <div class="ms-title" style="margin-top:.8rem">Project 2 — Dr. Pepper SWOT &amp; SMART Goals (Individual)</div>
+        <p class="ms-p">Full SWOT analysis for Dr. Pepper (est. 1885, oldest major US soft drink brand) + individual SMART goals &amp; KPIs assignment targeting global expansion opportunity.</p>
+        <div class="ms-grid" style="margin-top:.7rem">
+          <div class="ms-card"><div class="ms-card-icon">📊</div><div class="ms-card-title">SMART Goal 1 — Global Buzz</div><div class="ms-card-desc">+50% non-English brand mentions &amp; +25% reach in new markets within 6 months. KPIs: regional impressions + social listening tools.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🎟️</div><div class="ms-card-title">SMART Goal 2 — Trial Conversion</div><div class="ms-card-desc">20% CVR from ad click to promo code download within 3 months. KPIs: landing page CVR + CPA tracking.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🛒</div><div class="ms-card-title">SMART Goal 3 — E-commerce Expansion</div><div class="ms-card-desc">+15% international online sales revenue + 3 new retail partners within 6 months. KPIs: e-commerce revenue + distribution points.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">📱</div><div class="ms-card-title">Channel Analysis</div><div class="ms-card-desc">Facebook 12.55M / TikTok 1.9M / Instagram 1M / Twitter 448.8K / YouTube 65K. Recommended TikTok-first strategy for Gen Z engagement.</div></div>
         </div>
       </div>
 
       <div class="modal-section">
-        <div class="ms-title">SMART Goals Framework (GreenLeaf Organics)</div>
-        <p class="ms-p">Set 3 SMART goals mapped to the full marketing funnel for an eco-friendly skincare brand — tracked via GA4 + Search Console.</p>
-        <div class="funnel-row">
-          <div class="funnel-card fc-tofu"><div class="fc-label">TOFU</div><div class="fc-title">Brand Awareness</div><div class="fc-desc">+40% organic traffic via SEO &amp; content marketing.</div></div>
-          <div class="funnel-card fc-mofu"><div class="fc-label">MOFU</div><div class="fc-title">Engagement &amp; Leads</div><div class="fc-desc">+25% Instagram/TikTok engagement rate.</div></div>
-          <div class="funnel-card fc-bofu"><div class="fc-label">BOFU</div><div class="fc-title">Sales &amp; Conversion</div><div class="fc-desc">+20% total revenue via bundle offers.</div></div>
+        <div class="ms-title">Project 3 — Studio Miso SEO Strategy (Individual)</div>
+        <p class="ms-p">Final SEO proposal for <strong>Studio Miso</strong> — an F&amp;B franchise consulting brand. Developed keyword strategy, on-page SEO plan across 3 blog posts, and sitemap targeting franchise owners.</p>
+        <div class="ms-img-row" style="margin-top:.7rem">
+          <div><img src="img_sitemap.png" alt="Studio Miso sitemap" class="ms-img"/><div class="ms-img-cap">Studio Miso sitemap — SEO site structure</div></div>
+          <div><img src="img_logo.png" alt="Studio Miso logo" class="ms-img"/><div class="ms-img-cap">Studio Miso brand identity — logo</div></div>
         </div>
-      </div>
-
-      <div class="modal-section">
-        <div class="ms-title">Other Key Assignments</div>
-        <div class="ms-grid">
-          <div class="ms-card"><div class="ms-card-icon">🔍</div><div class="ms-card-title">SEO — Studio Miso Café</div><div class="ms-card-desc">Keyword research, content calendar, on-page optimization plan, and competitive gap analysis for a local Vancouver café brand.</div></div>
-          <div class="ms-card"><div class="ms-card-icon">📧</div><div class="ms-card-title">Email Drip Campaign</div><div class="ms-card-desc">Multi-stage drip campaign — segmentation logic, email sequence flow, subject line testing, and conversion goals per stage.</div></div>
-          <div class="ms-card"><div class="ms-card-icon">🥤</div><div class="ms-card-title">Dr. Pepper — SWOT &amp; Campaign Strategy</div><div class="ms-card-desc">Full SWOT analysis + campaign strategy with measurable goals, target audience definition, and platform mix rationale.</div></div>
-          <div class="ms-card"><div class="ms-card-icon">🤖</div><div class="ms-card-title">AI Remix Lab</div><div class="ms-card-desc">Generated and refined marketing assets using Gemini AI — brand visuals, copy, and content with focus on brand consistency.
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:.4rem;margin-top:.6rem">
-              <img src="img_ai1.png" alt="AI output 1" style="width:100%;border-radius:6px;border:1px solid var(--border)" />
-              <img src="img_ai2.png" alt="AI output 2" style="width:100%;border-radius:6px;border:1px solid var(--border)" />
-            </div>
-          </div></div>
-        </div>
-      </div>
-
-      <div class="modal-section">
-        <div class="ms-title">Café Brand Identity (Studio Miso)</div>
-        <div class="ms-img-row">
-          <div><img src="img_persona.png" alt="Buyer Persona" class="ms-img" /><div class="ms-img-cap">Buyer persona — Hailey, Sustainable Creator</div></div>
-          <div><img src="img_logo.png" alt="Studio Miso Logo" class="ms-img" /><div class="ms-img-cap">Brand logo — Studio Miso</div></div>
+        <div class="ms-grid" style="margin-top:.7rem">
+          <div class="ms-card"><div class="ms-card-icon">🔍</div><div class="ms-card-title">Keyword Strategy</div><div class="ms-card-desc">3-tier keyword map: awareness (KD:47 / 4.4K vol), consideration (KD:12 / 800 vol), conversion (KD:24 / 2.4K vol). Mapped to each blog post.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">📝</div><div class="ms-card-title">On-Page SEO Plan</div><div class="ms-card-desc">Meta tag optimization, H2 keyword alignment, and internal linking strategy across 3 posts — each targeting a different funnel stage.</div></div>
         </div>
       </div>
 
       <div class="modal-section">
         <div class="ms-title">Skills Applied</div>
-        <div class="ms-tags"><span class="ms-tag">Campaign Strategy</span><span class="ms-tag">SEO</span><span class="ms-tag">SMART Goals</span><span class="ms-tag">SWOT Analysis</span><span class="ms-tag">Social Media Marketing</span><span class="ms-tag">Email Marketing</span><span class="ms-tag">Marketing Analytics</span><span class="ms-tag">GA4</span><span class="ms-tag">Buyer Persona</span><span class="ms-tag">Content Writing</span><span class="ms-tag">AI Tools</span><span class="ms-tag">Brand Identity</span></div>
+        <div class="ms-tags"><span class="ms-tag">Brand Strategy</span><span class="ms-tag">SWOT Analysis</span><span class="ms-tag">Competitor Analysis</span><span class="ms-tag">SMART Goals &amp; KPIs</span><span class="ms-tag">SEO</span><span class="ms-tag">Keyword Research</span><span class="ms-tag">On-Page Optimization</span><span class="ms-tag">Buyer Persona</span><span class="ms-tag">Channel Analysis</span></div>
       </div>`
   },
 
