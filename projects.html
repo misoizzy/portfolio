@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EFH31JQB9R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EFH31JQB9R');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects · Miso Kang</title>
@@ -159,7 +167,7 @@
 
       <!-- 8. J&J Media — 2018 -->
       <div class="pcard fade-in" onclick="openModal('jj')">
-        <div class="pcard-thumb" style="background-image:linear-gradient(to bottom,rgba(10,5,5,.2) 0%,rgba(10,5,5,.82) 100%),url(jj_article.jpg);background-size:cover;background-position:center top">
+        <div class="pcard-thumb" style="background-image:linear-gradient(to bottom,rgba(10,5,5,.15) 0%,rgba(10,5,5,.75) 100%),url(jj_pub.jpg);background-size:cover;background-position:center top">
           <span class="pcard-thumb-yr">2018</span>
           <span class="pcard-thumb-tag">Sports Media · Research · Published Article</span>
         </div>
@@ -533,52 +541,60 @@ const modals = {
 
   jj: {
     tag: 'Sports Media · Research · Published Article · 2018',
-    title: '"Why Doesn\'t Anyone Watch College Basketball?" — Survey Research & Published Article',
+    title: '"통통(通通)튀는 대학농구, 만들 수 있을까?" — Survey Research & Published Article',
     org: 'J&J Media (Jumpball) · 뽈인러브 팀',
     body: `
       <div class="modal-section">
-        <img src="jj_onsite.jpg" alt="On-site survey at college basketball games" style="width:100%;border-radius:10px;margin-bottom:.5rem;display:block" />
-        <div style="font-size:.72rem;color:var(--grey);text-align:center;margin-top:.3rem">On-site surveys conducted at college basketball games — part of the 뽈인러브 팀 research project</div>
+        <img src="jj_pub.jpg" alt="Jumpball 매거진 기사 — 통통튀는 대학농구" style="width:100%;border-radius:10px;margin-bottom:.5rem;display:block" />
+        <div style="font-size:.72rem;color:var(--grey);text-align:center;margin-top:.3rem">Published on Jumpball.co.kr — "[매거진] 통통(通通)튀는 대학농구, 만들 수 있을까?" (2019.12)</div>
       </div>
       <div class="modal-section">
         <div class="ms-title">Project Overview</div>
-        <p class="ms-p"><strong>뽈인러브 팀</strong> (Ball in Love Team) was a 4-person reporting team formed within J&J Media's Jumpball magazine editorial department. The team investigated why Korean college basketball — once a major spectator sport — had lost its audience over time. The findings were published in the <strong>Jumpball August issue</strong>.</p>
-        <p class="ms-p">The project tackled five sub-topics. I was assigned to <strong>Sub-topic 1: "Why does Korea's college basketball league receive so little attention?"</strong> — the core research question of the entire project.</p>
+        <p class="ms-p"><strong>뽈인러브 팀</strong> (Ball in Love Team) was a 4-person reporting team formed within J&J Media's Jumpball editorial department. The mission: investigate why Korean college basketball — once packed arenas, star athletes, and national media coverage — had lost its audience, and find out if it could be revived.</p>
+        <p class="ms-p">I led <strong>Sub-topic 1: "Why does Korea's college basketball league receive so little attention?"</strong> — the core research question driving the entire project.</p>
       </div>
       <div class="modal-section">
-        <div class="ms-title">Team Structure</div>
-        <img src="jj_team.jpg" alt="Team composition slide" style="width:100%;border-radius:10px;margin-bottom:.5rem;display:block" />
-        <p class="ms-p" style="font-size:.8rem;color:var(--grey)">4-member team: each member owned one sub-topic. I led Sub-topic 1 (core attention/popularity question).</p>
-      </div>
-      <div class="modal-section">
-        <div class="ms-title">Research Mission</div>
-        <img src="jj_mission.jpg" alt="Mission and sub-topics selection" style="width:100%;border-radius:10px;margin-bottom:.5rem;display:block" />
+        <div class="ms-title">Team & Mission</div>
+        <div class="ms-img-row">
+          <div><img src="jj_team.jpg" alt="Team composition" class="ms-img" /><div class="ms-img-cap">4-member team — each member led one sub-topic</div></div>
+          <div><img src="jj_mission.jpg" alt="Sub-topic selection" class="ms-img" /><div class="ms-img-cap">Sub-topic 1 (Miso's topic): why the league lost attention</div></div>
+        </div>
       </div>
       <div class="modal-section">
         <div class="ms-title">Data Collection</div>
         <div class="ms-data-row">
-          <div class="ms-data-card"><div class="ms-data-num">1,000<span>+</span></div><div class="ms-data-lbl">Online survey respondents</div></div>
-          <div class="ms-data-card"><div class="ms-data-num">92</div><div class="ms-data-lbl">On-site game respondents</div></div>
-          <div class="ms-data-card"><div class="ms-data-num">3</div><div class="ms-data-lbl">Interview categories</div></div>
+          <div class="ms-data-card"><div class="ms-data-num">446<span>+</span></div><div class="ms-data-lbl">Online survey (college students)</div></div>
+          <div class="ms-data-card"><div class="ms-data-num">300<span>+</span></div><div class="ms-data-lbl">Fan survey (ages 35+)</div></div>
+          <div class="ms-data-card"><div class="ms-data-num">92</div><div class="ms-data-lbl">On-site at live games</div></div>
         </div>
-        <p class="ms-p" style="margin-top:.9rem">Combined online survey (1,000+ respondents) with on-site research at live college basketball games (92 respondents) for a richer picture of audience perception.</p>
+        <div class="ms-img-row" style="margin-top:.9rem">
+          <div><img src="jj_onsite.jpg" alt="On-site survey at games" class="ms-img" /><div class="ms-img-cap">On-site surveys conducted at college basketball games</div></div>
+          <div><img src="jj_game.jpg" alt="College basketball game" class="ms-img" /><div class="ms-img-cap">Modern college basketball — empty stands, shrinking attention</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Key Survey Findings</div>
+        <div class="ms-img-row">
+          <div><img src="jj_survey_interest.jpg" alt="Interest level survey chart" class="ms-img" /><div class="ms-img-cap">73% of respondents had no interest in college basketball — 32.4% had no interest in basketball at all</div></div>
+          <div><img src="jj_survey_problems.jpg" alt="Biggest problems survey chart" class="ms-img" /><div class="ms-img-cap">Biggest problem: lack of promotion (69.9%), followed by lack of events (27.3%)</div></div>
+        </div>
       </div>
       <div class="modal-section">
         <div class="ms-title">Interviews Conducted</div>
         <div class="ms-grid">
-          <div class="ms-card"><div class="ms-card-icon">📰</div><div class="ms-card-title">김경호 기자 — Kyunghyang Sports Reporter</div><div class="ms-card-desc">Interviewed sports journalist 김경호 from Kyunghyang Shinmun — media perspective on why college basketball coverage had declined and what it would take to bring it back.</div></div>
-          <div class="ms-card"><div class="ms-card-icon">🏀</div><div class="ms-card-title">4 College Basketball Players</div><div class="ms-card-desc">First-hand accounts from active college athletes — what it feels like to play in front of empty stands, and how the environment compared to the sport's past era.</div></div>
-          <div class="ms-card"><div class="ms-card-icon">🏛️</div><div class="ms-card-title">강종석 — KUSF PR Team Leader</div><div class="ms-card-desc">Interview with Korean University Sports Federation PR head 강종석 — institutional perspective on revitalization efforts and marketing challenges at the federation level.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">📰</div><div class="ms-card-title">김경호 기자 — Kyunghyang Sports Reporter</div><div class="ms-card-desc">Media perspective on why coverage declined. Recalled the era when Yonsei vs. Korea University rivalry games were "blood-boiling" — and contrasted it with today's near-invisible league.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🏀</div><div class="ms-card-title">4 Active College Basketball Players</div><div class="ms-card-desc">First-hand accounts: playing in front of empty stands, no fan letters, no brand deals — a complete contrast from the 1990s golden era when players received 1,500+ fan letters a day.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🏛️</div><div class="ms-card-title">강종석 — KUSF PR Team Leader</div><div class="ms-card-desc">Korean University Sports Federation perspective — institutional challenges around marketing, scheduling, and the structural barriers to revitalization.</div></div>
         </div>
       </div>
       <div class="modal-section">
         <div class="ms-title">Published Article</div>
-        <img src="jj_article.jpg" alt="Published article in Jumpball magazine" style="width:100%;border-radius:10px;margin-bottom:.5rem;display:block" />
-        <p class="ms-p" style="font-size:.8rem;color:var(--grey)">Research findings co-written and published in <strong>Jumpball magazine, August issue</strong>.</p>
+        <img src="jj_article.jpg" alt="Published article text" style="width:100%;border-radius:10px;margin-bottom:.5rem;display:block" />
+        <p class="ms-p" style="font-size:.8rem;color:var(--grey)">Research findings co-written and published on <strong>Jumpball.co.kr</strong> — Korea's leading basketball media outlet (est. 2005).</p>
       </div>
       <div class="modal-section">
         <div class="ms-title">Skills Applied</div>
-        <div class="ms-tags"><span class="ms-tag">Survey Design</span><span class="ms-tag">On-site Research</span><span class="ms-tag">Interview Conducting</span><span class="ms-tag">Data Analysis</span><span class="ms-tag">Editorial Writing</span><span class="ms-tag">Sports Journalism</span><span class="ms-tag">Team Coordination</span></div>
+        <div class="ms-tags"><span class="ms-tag">Survey Design</span><span class="ms-tag">On-site Research</span><span class="ms-tag">Data Analysis</span><span class="ms-tag">Interview Conducting</span><span class="ms-tag">Editorial Writing</span><span class="ms-tag">Sports Journalism</span><span class="ms-tag">Team Coordination</span></div>
       </div>`
   },
 
