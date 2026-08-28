@@ -12,14 +12,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact · Miso Kang</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <div class="page-wrap">
 
 <!-- NAV -->
-<nav>
+<nav class="site-nav">
   <a class="logo" href="index.html">Miso<span>.</span></a>
   <ul class="nav-ul" id="nav">
     <li><a href="index.html">Home</a></li>
@@ -36,7 +36,7 @@
   <div class="w">
     <div class="ph-breadcrumb">Home <span>/</span> Contact</div>
     <h1 class="ph-title">Let's <em>talk</em></h1>
-    <p class="ph-sub">Open to new opportunities in digital marketing, brand planning, or performance advertising. If something here caught your attention, feel free to reach out.</p>
+    <p class="ph-sub">Open to Marketing, Operations, and Brand Experience roles in Vancouver. If something here caught your attention, feel free to reach out.</p>
   </div>
 </div>
 
@@ -44,45 +44,61 @@
 <section class="section section--cream">
   <div class="w">
     <div class="contact-g">
-      <div>
+      <div data-reveal="left">
         <p class="slabel">Get in touch</p>
         <h2 class="stitle">Say hello, <em>let's connect</em></h2>
         <hr class="rule" />
-        <div class="ci">
-          <div class="ci-icon">📧</div>
+
+        <div id="resume" class="reach-row">
+          <a class="reach-link is-primary" href="mailto:yejin263437@gmail.com">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
+            Email
+          </a>
+          <span class="reach-link is-pending" title="Resume PDF coming soon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+            Resume — coming soon
+          </span>
+          <span class="reach-link is-pending" title="LinkedIn link coming soon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 9h4v2a4 4 0 0 1 4-2c3 0 4 2 4 5v7h-4v-6c0-2-1-3-2-3s-2 1-2 3v6h-4z"/></svg>
+            LinkedIn — coming soon
+          </span>
+        </div>
+
+        <div class="ci" style="margin-top:2rem">
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg></div>
           <div>
             <span class="ci-lbl">Email</span>
-            <span class="ci-val">Use the contact form →</span>
+            <span class="ci-val">yejin263437@gmail.com</span>
           </div>
         </div>
         <div class="ci">
-          <div class="ci-icon">📞</div>
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2z"/></svg></div>
           <div>
             <span class="ci-lbl">Phone</span>
             <span class="ci-val">+1 672 980 2122</span>
           </div>
         </div>
         <div class="ci">
-          <div class="ci-icon">📍</div>
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
           <div>
             <span class="ci-lbl">Location</span>
             <span class="ci-val">Vancouver, BC, Canada</span>
           </div>
         </div>
         <div class="ci">
-          <div class="ci-icon">📸</div>
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></div>
           <div>
             <span class="ci-lbl">Instagram</span>
             <span class="ci-val">@mi_soizzy</span>
           </div>
         </div>
-        <div style="margin-top:2rem;padding:1.5rem;background:var(--navy);border-radius:14px">
+        <div style="margin-top:2rem;padding:1.5rem;background:var(--ink);border-radius:14px">
           <div style="font-size:.67rem;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:.7rem">Currently</div>
-          <div style="font-size:.9rem;font-weight:600;color:#fff;margin-bottom:.3rem"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#52c982;margin-right:7px;vertical-align:middle"></span>Currently at La Forêt Café</div>
-          <div style="font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.7">Based in Vancouver · open to freelance campaigns or side collaborations.</div>
+          <div style="font-size:.9rem;font-weight:600;color:#fff;margin-bottom:.3rem"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#52c982;margin-right:7px;vertical-align:middle"></span>Operations &amp; Brand Strategy at La Forêt</div>
+          <div style="font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.7">Based in Vancouver · open to Marketing, Operations &amp; Brand Experience roles.</div>
         </div>
       </div>
-      <form class="cform" action="https://formspree.io/f/yejin263437@gmail.com" method="POST">
+      <form class="cform" action="https://formspree.io/f/yejin263437@gmail.com" method="POST" data-reveal="right">
         <div class="frow">
           <div class="fg"><label>Name</label><input type="text" name="name" placeholder="Your name" required /></div>
           <div class="fg"><label>Email</label><input type="email" name="email" placeholder="you@company.com" required /></div>
@@ -117,9 +133,6 @@
 </footer>
 <button class="back-top" id="bt" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-<script>
-function toggleNav(){document.getElementById('nav').classList.toggle('open')}
-addEventListener('scroll',()=>document.getElementById('bt').classList.toggle('show',scrollY>400));
-</script>
+<script src="motion.js"></script>
 </body>
 </html>
