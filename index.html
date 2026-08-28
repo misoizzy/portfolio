@@ -11,84 +11,20 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Miso Kang · Marketing, Operations &amp; Data</title>
-  <meta name="description" content="Miso Kang — I turn business problems into measurable solutions. Marketing performance, operational systems, and data analysis, Vancouver BC." />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <title>Miso Kang · Marketing, Strategy &amp; Data</title>
+  <meta name="description" content="Miso Kang — I build ideas, brands, and systems that move businesses forward. A marketer with a creative background and a data-driven approach to solving business problems." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700;800&family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* ─── HERO ─── */
-    #hero{min-height:92vh;background:var(--ink);display:flex;align-items:center;padding:150px 6% 80px;position:relative;overflow:hidden}
-    #hero::before{content:'';position:absolute;top:-140px;right:-120px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(51,85,255,.18) 0%,transparent 70%);pointer-events:none}
-    #hero::after{content:'';position:absolute;bottom:-160px;left:-140px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(51,85,255,.08) 0%,transparent 70%);pointer-events:none}
-    .hero-wrap{max-width:760px;margin:0 auto;width:100%;position:relative}
-    .hero-tag{font-family:var(--font-display);display:inline-flex;align-items:center;gap:9px;font-size:.72rem;font-weight:600;letter-spacing:2.2px;text-transform:uppercase;color:var(--accent-lt);margin-bottom:1.6rem}
-    .hero-tag::before{content:'';width:26px;height:1.5px;background:var(--accent-lt)}
-    h1{font-family:var(--font-display);font-weight:700;letter-spacing:-.025em;font-size:clamp(2.6rem,6vw,4.6rem);color:#fff;line-height:1.04;margin-bottom:1.6rem}
-    h1 em{font-family:var(--font-serif);font-style:italic;font-weight:400;color:var(--accent-lt)}
-    .hero-desc{font-size:1rem;color:rgba(255,255,255,.56);max-width:520px;line-height:1.85;margin-bottom:2.3rem}
-    .btns{display:flex;gap:.85rem;flex-wrap:wrap;margin-bottom:3rem}
-    .hero-note{display:flex;gap:2.8rem;flex-wrap:wrap;padding-top:2.2rem;border-top:1px solid rgba(255,255,255,.09)}
-    .hn-val{font-family:var(--font-display);font-size:1.7rem;font-weight:700;color:#fff;line-height:1}
-    .hn-val span{color:var(--accent-lt);font-size:1rem}
-    .hn-lbl{font-size:.66rem;color:rgba(255,255,255,.35);margin-top:.4rem;text-transform:uppercase;letter-spacing:.9px}
-
-    /* ─── HIGHLIGHTS ─── */
-    #highlights{background:var(--white);padding:70px 6%}
-    .hl-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
-    .hl-card{border:1px solid var(--line);border-radius:14px;padding:1.7rem;position:relative;overflow:hidden;transition:border-color .25s,transform .25s var(--ease)}
-    .hl-card:hover{border-color:var(--ink);transform:translateY(-3px)}
-    .hl-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent)}
-    .hl-num{font-family:var(--font-display);font-weight:700;font-size:2.1rem;color:var(--ink);line-height:1;margin-bottom:.5rem;font-variant-numeric:tabular-nums}
-    .hl-num span{font-size:1.05rem;color:var(--accent)}
-    .hl-label{font-size:.78rem;font-weight:700;color:var(--ink);margin-bottom:.25rem}
-    .hl-sub{font-size:.71rem;color:var(--mute);line-height:1.55}
-
-    /* ─── SELECTED WORK ─── */
-    #selected-work{padding:100px 6%;background:var(--paper)}
-    .sw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.6rem}
-    .sw-card{background:var(--white);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:border-color .28s,transform .28s var(--ease),box-shadow .28s;display:flex;flex-direction:column}
-    .sw-card:hover{border-color:var(--ink);transform:translateY(-5px);box-shadow:0 22px 48px rgba(11,11,12,.1)}
-    .sw-thumb{height:120px;padding:1.1rem 1.3rem;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
-    .sw-thumb-num{font-family:var(--font-display);font-size:2.6rem;font-weight:700;color:rgba(255,255,255,.09);position:absolute;right:.9rem;bottom:-.5rem;line-height:1}
-    .sw-thumb-cat{font-size:.63rem;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;color:rgba(255,255,255,.6);position:relative}
-    .sw-thumb-org{font-size:.72rem;color:rgba(255,255,255,.9);font-weight:600;position:relative}
-    .sw-body{padding:1.4rem 1.4rem 1.5rem;display:flex;flex-direction:column;flex:1}
-    .sw-title{font-family:var(--font-display);font-weight:700;letter-spacing:-.01em;font-size:1.02rem;color:var(--ink);line-height:1.3;margin-bottom:.85rem}
-    .sw-flow{font-size:.76rem;color:var(--mute);line-height:1.68;margin-bottom:.9rem}
-    .sw-flow b{color:var(--ink);font-weight:700}
-    .sw-reveal{max-height:0;opacity:0;overflow:hidden;transition:max-height .38s var(--ease),opacity .3s,margin .3s}
-    .sw-reveal-inner{padding-top:.2rem}
-    .sw-card:hover .sw-reveal,.sw-card:focus-within .sw-reveal{max-height:14rem;opacity:1;margin-bottom:.9rem}
-    .sw-tags{display:flex;flex-wrap:wrap;gap:.3rem;margin-bottom:.7rem}
-    .sw-result{font-size:.73rem;font-weight:600;color:var(--accent);background:var(--accent-dim);padding:.5rem .7rem;border-radius:8px;line-height:1.5}
-    .sw-cta{margin-top:auto;font-size:.75rem;font-weight:700;color:var(--ink);display:flex;align-items:center;gap:.35rem;padding-top:.4rem}
-    .sw-cta::after{content:'→';transition:transform .2s var(--ease)}
-    .sw-card:hover .sw-cta::after{transform:translateX(3px)}
-    @media(hover:none){.sw-reveal{max-height:none;opacity:1;margin-bottom:.9rem}}
-
-    /* ─── ABOUT PREVIEW ─── */
-    #about-preview{padding:100px 6%;background:var(--white)}
-    .ap-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:start}
-    .ap-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0}
-    .ap-tag{font-size:.74rem;font-weight:600;padding:.34rem .9rem;border-radius:50px;background:var(--paper);border:1px solid var(--line);color:var(--ink-soft)}
-    .ap-side-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:1.3rem}
-    @media(max-width:900px){
-      .hl-grid{grid-template-columns:repeat(2,1fr)}
-      .sw-grid,.ap-grid{grid-template-columns:1fr}
-    }
-    @media(max-width:640px){.hl-grid{grid-template-columns:repeat(2,1fr)}}
-  </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav class="site-nav">
-  <a class="logo" href="index.html">Miso<span>.</span></a>
+  <a class="logo" href="index.html">MISO KANG</a>
   <ul class="nav-ul" id="nav">
-    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="projects.html">Work</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="work.html">Experience</a></li>
-    <li><a href="projects.html">Projects</a></li>
+    <li><a href="resume.html">Resume</a></li>
     <li><a href="contact.html" class="nav-cta">Contact</a></li>
   </ul>
   <div class="burger" id="burger" onclick="toggleNav()">
@@ -97,155 +33,130 @@
 </nav>
 
 <!-- HERO -->
-<section id="hero">
-  <div class="hero-wrap">
-    <div class="hero-tag">Marketing × Operations × Data — Vancouver, BC</div>
-    <h1>
-      <span class="hero-line"><span>I turn business problems</span></span>
-      <span class="hero-line"><span>into <em>measurable</em> solutions.</span></span>
-    </h1>
-    <p class="hero-desc">I'm Miso Kang. I've run performance marketing for 30+ F&amp;B franchise clients across Meta, Google, and Naver — and today I build the operational systems and data analysis that help a growing business make better decisions. Most recently, I designed and built an internal ERP system at La Forêt to bring order, labor, and sales data into one place.</p>
-    <div class="btns">
-      <a class="btn btn-fill" href="#selected-work">View Selected Work</a>
-      <a class="btn btn-ghost" href="about.html">About Me</a>
-      <a class="btn btn-ghost" href="contact.html#resume">Resume</a>
+<section class="home-hero">
+  <div class="hh-grid">
+    <div data-reveal="up">
+      <div class="hh-eyebrow">Marketing · Strategy · Data</div>
+      <h1 class="hh-headline">I build ideas, brands, and <em>systems</em> that move businesses forward.</h1>
+      <p class="hh-sub">A marketer with a creative background and a data-driven approach to solving business problems.</p>
+      <div class="hh-ctas">
+        <a class="btn btn-fill" href="#selected-work">View Selected Work →</a>
+        <a class="btn-text" href="resume.html">Resume</a>
+      </div>
     </div>
-    <div class="hero-note">
-      <div data-reveal="up" data-delay="0"><div class="hn-val" data-count-to="600" data-count-suffix="%">0%</div><div class="hn-lbl">Lead Growth · V WORKS</div></div>
-      <div data-reveal="up" data-delay=".08"><div class="hn-val">3</div><div class="hn-lbl">Branches · ERP Built</div></div>
-      <div data-reveal="up" data-delay=".16"><div class="hn-val" data-count-to="306000" data-count-suffix="+">0</div><div class="hn-lbl">Naver Impressions</div></div>
-      <div data-reveal="up" data-delay=".24"><div class="hn-val" data-count-to="23" data-count-suffix="+">0</div><div class="hn-lbl">F&amp;B Clients</div></div>
-    </div>
-  </div>
-</section>
 
-<!-- HIGHLIGHTS -->
-<section id="highlights">
-  <div class="w">
-    <div class="hl-grid">
-      <div class="hl-card" data-reveal="up" data-delay="0">
-        <div class="hl-num" data-count-to="306000" data-count-suffix="+">0</div>
-        <div class="hl-label">Naver Impressions</div>
-        <div class="hl-sub">0.38% avg. CTR across keyword ad campaigns</div>
+    <div class="hh-collage" data-reveal="right" data-delay=".1">
+      <div class="hh-card hh-card-1">
+        <div class="hh-card-lbl">Weekly Sales · La Forêt</div>
+        <div class="hh-card-val">$224K+</div>
+        <div class="hh-card-sub">Current dashboard snapshot</div>
       </div>
-      <div class="hl-card" data-reveal="up" data-delay=".08">
-        <div class="hl-num" data-count-to="600" data-count-suffix="%">0%</div>
-        <div class="hl-label">Monthly Lead Growth</div>
-        <div class="hl-sub">V WORKS — database grew from 500 to 3,000+ leads</div>
+      <div class="hh-card hh-card-2">
+        <div class="hh-card-lbl">ERP System</div>
+        <div class="hh-card-modules">
+          <span class="illus-mod is-active">Orders</span>
+          <span class="illus-mod">Employees</span>
+          <span class="illus-mod">Inventory</span>
+          <span class="illus-mod">Sales</span>
+        </div>
       </div>
-      <div class="hl-card" data-reveal="up" data-delay=".16">
-        <div class="hl-num" style="font-size:1.5rem">Built</div>
-        <div class="hl-label">Internal ERP System</div>
-        <div class="hl-sub">La Forêt — unified orders, labor &amp; sales across 3 branches</div>
+      <div class="hh-card hh-card-3">
+        <div class="hh-card-lbl">Completed Orders</div>
+        <div class="hh-card-val" data-count-to="9068">0</div>
       </div>
-      <div class="hl-card" data-reveal="up" data-delay=".24">
-        <div class="hl-num" data-count-to="23" data-count-suffix="+">0</div>
-        <div class="hl-label">F&amp;B Clients Managed</div>
-        <div class="hl-sub">Franchise, startup, and independent restaurant brands</div>
-      </div>
+      <div class="hh-note">Turning data into decisions.</div>
     </div>
   </div>
 </section>
 
 <!-- SELECTED WORK -->
-<section id="selected-work">
+<section class="section section--cream" id="selected-work">
   <div class="w">
-    <p class="slabel">Selected Work</p>
-    <h2 class="stitle">Problem <em>→</em> solution <em>→</em> result</h2>
-    <p class="ssub">Three projects that show the same pattern at different scales — find the operational gap, fix it, prove it with data.</p>
+    <p class="slabel" data-reveal="up">Selected Work</p>
+    <h2 class="stitle" data-reveal="up" data-delay=".05">A closer look at three <em>projects</em></h2>
+    <p class="ssub" data-reveal="up" data-delay=".1">From brand strategy to the backend systems that run a business.</p>
+
     <div class="sw-grid">
-
-      <!-- 01 La Forêt -->
-      <a class="sw-card" href="laforet.html" data-reveal="up" data-delay="0">
-        <div class="sw-thumb t0">
-          <div class="sw-thumb-cat">Operations · ERP · Data</div>
-          <div class="sw-thumb-org">La Forêt</div>
-          <div class="sw-thumb-num">01</div>
+      <a class="project-card is-featured" href="laforet.html" data-reveal="up" data-delay="0">
+        <div class="pc-visual t0">
+          <div class="pc-visual-num">01</div>
+          <div class="pc-visual-org">La Forêt</div>
         </div>
-        <div class="sw-body">
-          <h3 class="sw-title">Operations &amp; ERP Transformation</h3>
-          <p class="sw-flow"><b>Problem</b> — Orders, labor, and sales data lived in spreadsheets and group chats across 3 branches; HQ had no shared visibility.<br><b>Solution</b> — Designed and built an internal ERP system, then used it to run a labor-cost-vs-revenue analysis now shaping staffing decisions.</p>
-          <div class="sw-reveal"><div class="sw-reveal-inner">
-            <div class="sw-tags"><span class="ptag">Operations</span><span class="ptag">ERP Design</span><span class="ptag">Data Analysis</span></div>
-            <div class="sw-result">Status: piloted at one branch, now rolling out company-wide</div>
-          </div></div>
-          <span class="sw-cta">View full case study</span>
+        <div class="pc-body">
+          <h3 class="pc-title">Operations &amp; ERP Transformation</h3>
+          <p class="pc-subtitle">Operations · Analytics · Automation</p>
+          <div class="pc-tags"><span class="tag">Operations</span><span class="tag">ERP</span><span class="tag">Analytics</span><span class="tag">Automation</span></div>
+          <span class="pc-cta">View project</span>
         </div>
       </a>
 
-      <!-- 02 Cigar 2000 -->
-      <a class="sw-card" href="projects.html" data-reveal="up" data-delay=".08">
-        <div class="sw-thumb" style="background-image:linear-gradient(150deg,#0B0B0C 0%,#3a2410 100%)">
-          <div class="sw-thumb-cat">SEO · Website · Marketing</div>
-          <div class="sw-thumb-org">2000 Cigars</div>
-          <div class="sw-thumb-num">02</div>
+      <a class="project-card" href="cigar2000.html" data-reveal="up" data-delay=".08">
+        <div class="pc-visual" style="background:linear-gradient(150deg,#111 0%,#3a2410 100%)">
+          <div class="pc-visual-num">02</div>
+          <div class="pc-visual-org">2000 Cigars</div>
         </div>
-        <div class="sw-body">
-          <h3 class="sw-title">Digital Marketing &amp; SEO</h3>
-          <p class="sw-flow"><b>Problem</b> — Strong in-store credibility, but almost no organic search visibility or online conversion path.<br><b>Solution</b> — Built an SEO strategy, landing page mockup, and blog content plan to convert organic traffic into inquiries.</p>
-          <div class="sw-reveal"><div class="sw-reveal-inner">
-            <div class="sw-tags"><span class="ptag">SEO</span><span class="ptag">Landing Page</span><span class="ptag">Content Strategy</span></div>
-            <div class="sw-result">Goal set: 5% → 13% online sales share in 6 months</div>
-          </div></div>
-          <span class="sw-cta">View case study</span>
+        <div class="pc-body">
+          <h3 class="pc-title">Digital Growth &amp; SEO</h3>
+          <p class="pc-subtitle">SEO · Content · Growth</p>
+          <div class="pc-tags"><span class="tag">SEO</span><span class="tag">Website</span><span class="tag">Content</span><span class="tag">Growth</span></div>
+          <span class="pc-cta">View project</span>
         </div>
       </a>
 
-      <!-- 03 V WORKS -->
-      <a class="sw-card" href="work.html#vworks" data-reveal="up" data-delay=".16">
-        <div class="sw-thumb t3">
-          <div class="sw-thumb-cat">Paid Media · Branding</div>
-          <div class="sw-thumb-org">V WORKS (VMARK)</div>
-          <div class="sw-thumb-num">03</div>
+      <a class="project-card" href="vworks.html" data-reveal="up" data-delay=".16">
+        <div class="pc-visual t3">
+          <div class="pc-visual-num">03</div>
+          <div class="pc-visual-org">V WORKS</div>
         </div>
-        <div class="sw-body">
-          <h3 class="sw-title">Brand &amp; Growth Marketing</h3>
-          <p class="sw-flow"><b>Problem</b> — Six F&amp;B and retail brands needed steady lead flow and lower acquisition costs across Meta, Google, and Naver.<br><b>Solution</b> — Directed full-cycle campaigns — proposals, creative, bidding, weekly reporting — supporting 9+ new store openings a month.</p>
-          <div class="sw-reveal"><div class="sw-reveal-inner">
-            <div class="sw-tags"><span class="ptag">Meta Ads</span><span class="ptag">Google Ads</span><span class="ptag">Naver Ads</span></div>
-            <div class="sw-result">+600% leads · −85% CAC · 18% avg. conversion</div>
-          </div></div>
-          <span class="sw-cta">View campaign detail</span>
+        <div class="pc-body">
+          <h3 class="pc-title">Performance Marketing &amp; Funnel Strategy</h3>
+          <p class="pc-subtitle">Paid Media · Funnel · Analytics</p>
+          <div class="pc-tags"><span class="tag">Paid Media</span><span class="tag">Campaign Funnel</span><span class="tag">GAIQ</span><span class="tag">CRO</span></div>
+          <span class="pc-cta">View project</span>
         </div>
       </a>
-
     </div>
   </div>
 </section>
 
+<!-- POSITIONING -->
+<section class="positioning">
+  <div class="w">
+    <p class="pos-text" data-reveal="up">Marketing gave me a creative lens.<br>Data gave me a way to measure it.<br>Operations taught me how businesses actually run.<br><br><strong>Today, I <em>connect all three.</em></strong></p>
+  </div>
+</section>
+
 <!-- ABOUT PREVIEW -->
-<section id="about-preview">
+<section class="section section--cream">
   <div class="w">
     <div class="ap-grid">
       <div data-reveal="left">
         <p class="slabel">About Me</p>
-        <h2 class="stitle">From campaigns<br>to <em>systems.</em></h2>
+        <h2 class="stitle">A marketer who likes to understand<br>how the whole business <em>works.</em></h2>
         <hr class="rule" />
-        <p style="font-size:.94rem;color:var(--mute);line-height:1.85;margin-bottom:1rem">I started in marketing — learning how campaigns move people and how brands earn attention. Running performance campaigns for 30+ F&amp;B franchise clients taught me to read data critically, not just report it.</p>
-        <p style="font-size:.94rem;color:var(--mute);line-height:1.85;margin-bottom:1.6rem">That instinct pulled me toward what happens <strong style="color:var(--ink);font-weight:600">behind</strong> the campaign — how a business actually operates. Today I combine marketing thinking with operational problem-solving: most recently, designing an ERP system for La Forêt's three-branch operation and analyzing labor cost against revenue to inform staffing decisions.</p>
-        <a class="btn-text" href="about.html">Full profile</a>
+        <p style="font-size:.94rem;color:var(--mute);line-height:1.85;margin-bottom:1.6rem">My background is in performance marketing, branding, and digital growth. Over time, I became increasingly interested in what happens beyond the campaign — how teams operate, how data flows, and how systems can improve decision-making.</p>
+        <a class="btn-text" href="about.html">More About Me</a>
       </div>
       <div data-reveal="right">
         <div class="ap-tags">
-          <span class="ap-tag">Meta Ads Manager</span>
-          <span class="ap-tag">Naver Search Ads</span>
-          <span class="ap-tag">Google Analytics</span>
+          <span class="ap-tag">Performance Marketing</span>
+          <span class="ap-tag">Brand Strategy</span>
           <span class="ap-tag">SEO &amp; Content Strategy</span>
           <span class="ap-tag">ERP System Design</span>
           <span class="ap-tag">Process Improvement</span>
           <span class="ap-tag">Labor Cost Analysis</span>
-          <span class="ap-tag">SMART Goals &amp; KPIs</span>
+          <span class="ap-tag">Google Analytics (GAIQ)</span>
           <span class="ap-tag">Proposal Writing</span>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-top:1rem">
           <div class="ap-side-card">
-            <div style="font-family:var(--font-display);font-size:.65rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem">Certifications</div>
+            <div style="font-family:var(--font-display);font-size:.65rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent-ink);margin-bottom:.5rem">Certifications</div>
             <div style="font-size:.78rem;font-weight:600;color:var(--ink);margin-bottom:.22rem">Hootsuite Academy</div>
             <div style="font-size:.72rem;color:var(--mute)">Social Media Marketing</div>
             <div style="font-size:.72rem;color:var(--mute);margin-top:.5rem">+ GAIQ, GTQ, MOS</div>
           </div>
           <div class="ap-side-card">
-            <div style="font-family:var(--font-display);font-size:.65rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem">Languages</div>
+            <div style="font-family:var(--font-display);font-size:.65rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent-ink);margin-bottom:.5rem">Languages</div>
             <div style="font-size:.78rem;font-weight:600;color:var(--ink);margin-bottom:.22rem">Korean</div>
             <div style="font-size:.72rem;color:var(--mute)">Native</div>
             <div style="font-size:.78rem;font-weight:600;color:var(--ink);margin-top:.5rem">English</div>
@@ -259,14 +170,19 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="fl">Miso<span>.</span></div>
-  <p class="fc">© 2026 Miso Kang. All rights reserved.</p>
-  <nav class="flinks">
-    <a href="about.html">About</a>
-    <a href="work.html">Experience</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="fl">MISO KANG</div>
+      <div class="footer-tagline">Marketing · Strategy · Data<br>Vancouver, BC</div>
+    </div>
+    <nav class="footer-links">
+      <a href="mailto:yejin263437@gmail.com">Email</a>
+      <a href="contact.html#resume" title="LinkedIn — coming soon">LinkedIn</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </div>
+  <p class="footer-cta">Let's build something <em>meaningful.</em></p>
+  <p class="footer-bottom">© 2026 Miso Kang. All rights reserved.</p>
 </footer>
 
 <button class="back-top" id="bt" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
