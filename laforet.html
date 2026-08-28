@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>La Forêt — Operations & ERP Transformation · Miso Kang</title>
   <meta name="description" content="From manual, document-based operations to a centralized, data-driven operating system — ERP design, sales automation, workforce analytics, and product profitability at La Forêt." />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700;800&family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -21,21 +21,20 @@
 
 <!-- NAV -->
 <nav class="site-nav">
-  <a class="logo" href="index.html">Miso<span>.</span></a>
+  <a class="logo" href="index.html">MISO KANG</a>
   <ul class="nav-ul" id="nav">
-    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html" class="active">Work</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="work.html">Experience</a></li>
-    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="resume.html">Resume</a></li>
     <li><a href="contact.html" class="nav-cta">Contact</a></li>
   </ul>
   <div class="burger" onclick="toggleNav()"><span></span><span></span><span></span></div>
 </nav>
 
 <!-- HERO -->
-<div class="cs-hero">
+<div class="cs-hero cs-hero--forest">
   <div class="w">
-    <div class="ph-breadcrumb"><a href="index.html">Home</a> <span>/</span> <a href="projects.html">Projects</a> <span>/</span> La Forêt</div>
+    <div class="ph-breadcrumb"><a href="index.html">Home</a> <span>/</span> <a href="projects.html">Work</a> <span>/</span> La Forêt</div>
     <div class="cs-hero-org" style="margin-top:1.1rem">LA FORÊT</div>
     <h1 class="cs-hero-title">Operations &amp; ERP Transformation</h1>
     <p class="cs-hero-sub" style="margin-bottom:.9rem">From manual, document-based operations to a centralized, data-driven operating system.</p>
@@ -79,10 +78,10 @@
   </div>
 </section>
 
-<!-- 01 CENTRALIZED ERP -->
+<!-- THE APPROACH -->
 <section class="cs-section section--cream">
   <div class="w">
-    <div class="cs-num" data-reveal="up">01</div>
+    <div class="cs-num" data-reveal="up">The Approach</div>
     <h2 class="cs-h" data-reveal="up" data-delay=".05">Centralized ERP</h2>
     <p class="cs-p" data-reveal="up" data-delay=".1">I designed and implemented an internal ERP system to centralize operational data across branches.</p>
 
@@ -97,12 +96,23 @@
       <div class="flow-arrow">→</div>
       <div class="flow-node"><div class="flow-node-label">Sales</div></div>
       <div class="flow-arrow">→</div>
-      <div class="flow-node" style="background:var(--accent)"><div class="flow-node-label">Reporting</div></div>
+      <div class="flow-node is-final"><div class="flow-node-label">Reporting</div></div>
     </div>
 
-    <div class="shot" data-reveal="up" data-delay=".2">
-      <div class="shot-bar"><span class="shot-dot"></span><span class="shot-dot"></span><span class="shot-dot"></span></div>
-      <div class="shot-body"><b>ERP Order Management</b>Screenshot pending — sanitized production screen to be added</div>
+    <div class="illus" data-reveal="up" data-delay=".2">
+      <div class="illus-modrow">
+        <span class="illus-mod is-active">Orders</span>
+        <span class="illus-mod">Employees</span>
+        <span class="illus-mod">Inventory</span>
+        <span class="illus-mod">Suppliers</span>
+        <span class="illus-mod">Sales</span>
+        <span class="illus-mod">Reporting</span>
+      </div>
+      <div class="illus-kpis">
+        <div class="illus-kpi"><div class="illus-kpi-val">$224K+</div><div class="illus-kpi-lbl">Weekly Sales</div></div>
+        <div class="illus-kpi"><div class="illus-kpi-val">9,068</div><div class="illus-kpi-lbl">Orders</div></div>
+        <div class="illus-kpi"><div class="illus-kpi-val">3</div><div class="illus-kpi-lbl">Branches</div></div>
+      </div>
     </div>
     <div class="shot-cap">Live demo: <a class="btn-text" href="https://laforet-order-v2.vercel.app/admin/order" target="_blank" rel="noopener" style="display:inline-flex">laforet-order-v2.vercel.app/admin/order</a></div>
 
@@ -117,10 +127,10 @@
   </div>
 </section>
 
-<!-- 02 CORE ANALYTICS & AUTOMATION -->
+<!-- THE WORK -->
 <section class="cs-section">
   <div class="w">
-    <div class="cs-num" data-reveal="up">02</div>
+    <div class="cs-num" data-reveal="up">The Work</div>
     <h2 class="cs-h" data-reveal="up" data-delay=".05">Core Analytics &amp; Automation</h2>
 
     <div class="core-grid">
@@ -175,10 +185,10 @@
   </div>
 </section>
 
-<!-- WHAT THIS ENABLED -->
+<!-- THE RESULTS -->
 <section class="cs-section section--cream">
   <div class="w">
-    <div class="cs-num" data-reveal="up">What This Enabled</div>
+    <div class="cs-num" data-reveal="up">The Results</div>
     <div class="insight-row">
       <div class="insight-item" data-reveal="up" data-delay="0">
         <div class="insight-title">Centralized Data</div>
@@ -196,10 +206,8 @@
   </div>
 </section>
 
-<!-- IMPACT -->
 <section class="cs-section section--navy">
   <div class="w">
-    <div class="cs-num" data-reveal="up">Impact</div>
     <div class="impact-grid">
       <div class="impact-card" data-reveal="up" data-delay="0">
         <div class="impact-title">Centralized</div>
@@ -221,10 +229,23 @@
   </div>
 </section>
 
+<!-- WHAT I LEARNED -->
+<section class="cs-section">
+  <div class="w">
+    <div class="cs-num" data-reveal="up">What I Learned</div>
+    <p class="cs-p" data-reveal="up" data-delay=".05">Building the ERP end to end taught me that systems work only when they match how people actually work day to day — the hardest part wasn't the schema, it was getting branch staff to trust and adopt a new workflow.</p>
+    <ul class="tight-list" data-reveal="up" data-delay=".1">
+      <li>Good data infrastructure is a prerequisite for good decisions, not an afterthought</li>
+      <li>Automation is only valuable if the underlying data is consistent and trusted</li>
+      <li>Operations, workforce, and financial data tell a fuller story when connected than when viewed separately</li>
+    </ul>
+  </div>
+</section>
+
 <!-- FINAL TAKEAWAY -->
 <section class="cs-section section--cream" style="text-align:center;padding-top:90px;padding-bottom:70px">
   <div class="w">
-    <h2 class="cs-h" data-reveal="up" style="margin:0 auto;max-width:none">From manual processes to <em style="font-family:var(--font-serif);font-style:italic;color:var(--accent)">measurable</em> operations.</h2>
+    <h2 class="cs-h" data-reveal="up" style="margin:0 auto;max-width:none">From manual processes to <em style="font-family:var(--font-serif);font-style:italic;color:var(--lf-accent-lt)">measurable</em> operations.</h2>
     <div style="margin-top:1.3rem" data-reveal="up" data-delay=".08">
       <a class="btn-text" href="projects.html" style="justify-content:center">Back to all projects</a>
     </div>
@@ -236,13 +257,21 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="fl">Miso<span>.</span></div>
-  <p class="fc">© 2026 Miso Kang. All rights reserved.</p>
-  <nav class="flinks">
-    <a href="index.html">Home</a><a href="about.html">About</a>
-    <a href="work.html">Experience</a><a href="contact.html">Contact</a>
-  </nav>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="fl">MISO KANG</div>
+      <div class="footer-tagline">Marketing · Strategy · Data<br>Vancouver, BC</div>
+    </div>
+    <nav class="footer-links">
+      <a href="mailto:yejin263437@gmail.com">Email</a>
+      <a href="contact.html#resume" title="LinkedIn — coming soon">LinkedIn</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </div>
+  <p class="footer-cta">Let's build something <em>meaningful.</em></p>
+  <p class="footer-bottom">© 2026 Miso Kang. All rights reserved.</p>
 </footer>
+
 <button class="back-top" id="bt" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <script src="motion.js"></script>

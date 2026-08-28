@@ -11,19 +11,10 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Experience · Miso Kang</title>
-  <meta name="description" content="Miso Kang's career timeline — La Forêt, BBGG Fashion, V WORKS (VMARK), 1L Coffee, and education at Cornerstone College and Paichai University." />
+  <title>Resume · Miso Kang</title>
+  <meta name="description" content="Miso Kang's resume — Experience, Education, Skills, and Certifications in Marketing, Operations, and Data." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700;800&family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* ─── AD WORK DETAIL ─── */
-    #vworks{background:var(--ink);padding:80px 6%}
-    .vw-intro{display:flex;align-items:flex-start;justify-content:space-between;gap:2rem;margin-bottom:2.5rem;flex-wrap:wrap}
-    .vw-badge{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1rem 1.5rem;display:inline-flex;align-items:center;gap:1rem;flex-shrink:0}
-    .vw-logo{font-family:'DM Serif Display',serif;font-size:1.5rem;color:#fff;font-style:italic}
-    .vw-logo span{color:var(--accent)}
-    .vw-sub{font-size:.72rem;color:rgba(255,255,255,.4);margin-top:.2rem}
-  </style>
 </head>
 <body>
 <div class="page-wrap">
@@ -34,7 +25,7 @@
   <ul class="nav-ul" id="nav">
     <li><a href="projects.html">Work</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="resume.html">Resume</a></li>
+    <li><a href="resume.html" class="active">Resume</a></li>
     <li><a href="contact.html" class="nav-cta">Contact</a></li>
   </ul>
   <div class="burger" onclick="toggleNav()"><span></span><span></span><span></span></div>
@@ -43,14 +34,18 @@
 <!-- PAGE HEADER -->
 <div class="page-hero">
   <div class="w">
-    <div class="ph-breadcrumb"><a href="index.html">Home</a> <span>/</span> Experience</div>
-    <h1 class="ph-title" style="margin-top:1.1rem">Career &amp; <em>Education</em></h1>
-    <p class="ph-sub">Currently at La Forêt (Vancouver, BC) — supporting ERP systems, operational process improvement, and cross-functional brand &amp; marketing initiatives. Previously: BBGG Fashion (multi-channel retail marketing) and an ad agency marketer running Meta, Google Ads &amp; <span class="nv">Naver</span> <span style="font-size:.8rem;opacity:.75">(Korea's #1 search engine)</span> campaigns for 30+ F&B franchise clients. Completed a digital marketing co-op at Cornerstone College, Vancouver (Sep 2025 – Aug 2026).</p>
+    <div class="ph-breadcrumb"><a href="index.html">Home</a> <span>/</span> Resume</div>
+    <h1 class="ph-title" style="margin-top:1.1rem">Resume</h1>
+    <p class="ph-sub">Experience, education, skills, and certifications — everything on this site, in one place.</p>
+    <div style="margin-top:1.6rem;display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap">
+      <span class="btn btn-fill" style="opacity:.5;cursor:not-allowed" title="PDF coming soon">Download Resume (PDF) — coming soon</span>
+      <a class="btn-text" href="contact.html#resume">Email me directly</a>
+    </div>
   </div>
 </div>
 
-<!-- TIMELINE -->
-<section class="section">
+<!-- EXPERIENCE & EDUCATION -->
+<section class="section section--cream">
   <div class="w">
     <p class="slabel">Career &amp; Education</p>
     <h2 class="stitle">Where I've <em>been</em></h2>
@@ -151,41 +146,67 @@
   </div>
 </section>
 
-<!-- V WORKS AD WORK DETAIL -->
-<section id="vworks">
+<!-- SKILLS -->
+<section class="section">
   <div class="w">
-    <div class="vw-intro">
-      <div>
-        <p class="slabel" style="color:rgba(255,255,255,.45)">Ad Work Detail</p>
-        <h2 class="stitle stitle--white">Campaign work at <em>V WORKS</em></h2>
-        <p style="font-size:.9rem;color:rgba(255,255,255,.5);line-height:1.8;max-width:480px;margin-top:.7rem">Real campaign data from Meta and Naver ad operations for F&B franchise clients. Running proposals, creatives, and weekly reports across 23+ brands simultaneously.</p>
+    <p class="slabel">Skills</p>
+    <h2 class="stitle">Tools &amp; <em>expertise</em></h2>
+    <hr class="rule" />
+    <div class="skillcat-grid">
+      <div class="skillcat" data-reveal="up" data-delay="0">
+        <div class="skillcat-title">Marketing</div>
+        <div class="skillcat-tags">
+          <span class="skilltag">Meta Ads Manager</span><span class="skilltag">Google Search Ads</span>
+          <span class="skilltag">Google Ads — GDN &amp; YouTube Shorts</span><span class="skilltag">Naver Search Ads</span>
+          <span class="skilltag">SEO &amp; Content Strategy</span><span class="skilltag">Brand Strategy</span>
+          <span class="skilltag">Proposal Writing</span>
+        </div>
       </div>
-      <div class="vw-badge"><div><div class="vw-logo">V<span>MARK</span></div><div class="vw-sub">Advertising + Incubating · Daejeon</div></div></div>
+      <div class="skillcat" data-reveal="up" data-delay=".06">
+        <div class="skillcat-title">Operations</div>
+        <div class="skillcat-tags">
+          <span class="skilltag">ERP System Design</span><span class="skilltag">Process Improvement</span>
+          <span class="skilltag">Workflow Management</span><span class="skilltag">Cross-functional Coordination</span>
+          <span class="skilltag">Project Coordination</span>
+        </div>
+      </div>
+      <div class="skillcat" data-reveal="up" data-delay=".12">
+        <div class="skillcat-title">Data</div>
+        <div class="skillcat-tags">
+          <span class="skilltag">Google Analytics (GAIQ)</span><span class="skilltag">SPSS</span>
+          <span class="skilltag">Labor Cost Analysis</span><span class="skilltag">Data Analysis &amp; Reporting</span>
+          <span class="skilltag">SMART Goals &amp; KPIs</span>
+        </div>
+      </div>
+      <div class="skillcat" data-reveal="up" data-delay=".18">
+        <div class="skillcat-title">Tools</div>
+        <div class="skillcat-tags">
+          <span class="skilltag">Adobe Photoshop</span><span class="skilltag">Adobe Illustrator</span>
+          <span class="skilltag">Microsoft Excel</span><span class="skilltag">PowerPoint</span>
+          <span class="skilltag">Hootsuite</span><span class="skilltag">Naver DataLab</span>
+          <span class="skilltag">Google Trends</span><span class="skilltag">Lightroom</span>
+        </div>
+      </div>
     </div>
-    <div class="metrics-row">
-      <div class="mcard"><div class="mcard-val">306K<span>+</span></div><div class="mcard-lbl">Naver Impressions <span style="display:block;font-size:.6rem;opacity:.6;font-weight:400">(Korea's #1 search engine)</span></div></div>
-      <div class="mcard"><div class="mcard-val">0.38<span>%</span></div><div class="mcard-lbl">Naver Avg. CTR</div></div>
-      <div class="mcard"><div class="mcard-val">223K<span>+</span></div><div class="mcard-lbl">Meta Impressions</div></div>
-      <div class="mcard"><div class="mcard-val">114<span>+</span></div><div class="mcard-lbl">Meta Lead Inquiries</div></div>
-    </div>
-    <p class="client-lbl">Clients managed (F&amp;B · Franchise · Startup)</p>
-    <div class="client-chips">
-      <span class="cc">New York Burger</span><span class="cc">SCK Pasta Mall</span><span class="cc">Daehan Naengmyeon</span>
-      <span class="cc">Daehan Gukbap</span><span class="cc">Namsan Pork Cutlet</span><span class="cc">Lucky Jokbal</span>
-      <span class="cc">Majang-dong Alley</span><span class="cc">Life Steamed Monkfish</span><span class="cc">Bingsudang</span>
-      <span class="cc">Saranggak</span><span class="cc">Café Dongne</span><span class="cc">Every Coffee</span>
-      <span class="cc">Jjinya Charcoal Chicken</span><span class="cc">Young Grilled Feet</span><span class="cc">Frank Coffin Bar</span>
-      <span class="cc">We Rice</span><span class="cc">Oppa Hwaiting</span><span class="cc">Bass Burger</span>
-      <span class="cc">Jeonguk Daepae</span><span class="cc">Chogye Hanwoo</span><span class="cc">Mugunghwa House</span>
-      <span class="cc">Huchijip</span><span class="cc">+ more</span>
-    </div>
-    <div class="work-grid">
-      <div class="wcard fade-in"><div class="wcard-num">01 · Meta Ads</div><div class="wcard-title">Facebook &amp; Instagram Campaign Planning</div><div class="wcard-desc">Write brand-research-based proposals with budget breakdowns, set targeting (age 24–65, Korea-wide, interest &amp; behavioral), design creatives, run and monitor campaigns weekly.</div></div>
-      <div class="wcard fade-in"><div class="wcard-num">02 · Naver Keyword</div><div class="wcard-title">Keyword Ad Setup, Bidding &amp; Monitoring</div><div class="wcard-desc">Select main keywords, monitor rank and bidding daily, adjust budget based on DB inflow. Managed 306K+ impressions across a 5-week campaign — diagnosed a week-4 CTR drop and adjusted immediately.</div></div>
-      <div class="wcard fade-in"><div class="wcard-num">03 · Reporting</div><div class="wcard-title">Weekly Analysis &amp; Monthly Client Reports</div><div class="wcard-desc">Compile weekly tables (impressions, clicks, CTR, leads) across both platforms. Write monthly client reports with cause-and-effect analysis — including external factors like election season ad pressure.</div></div>
-      <div class="wcard fade-in"><div class="wcard-num">04 · Creative</div><div class="wcard-title">Ad Creative &amp; Thumbnail Design</div><div class="wcard-desc">Design all ad visuals — feed images, story/reels banners, GDN display ads, Naver thumbnails — in Photoshop and Illustrator across 20+ clients simultaneously.</div></div>
-      <div class="wcard fade-in"><div class="wcard-num">05 · Proposals</div><div class="wcard-title">Brand Research &amp; Ad Planning Documents</div><div class="wcard-desc">Write client-facing proposals: brand research, competitor analysis, platform rationale, budget allocation (Meta / Naver / GDN / YouTube), expected performance benchmarks.</div></div>
-      <div class="wcard fade-in"><div class="wcard-num">06 · Multi-channel</div><div class="wcard-title">GDN, YouTube &amp; Integrated Coordination</div><div class="wcard-desc">Coordinate GDN display and YouTube pre-roll campaigns. Plan video shoots with the studio team and repurpose video content across platforms to maximize creative value.</div></div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section section--cream">
+  <div class="w">
+    <p class="slabel">Certifications</p>
+    <h2 class="stitle">Credentials</h2>
+    <hr class="rule" />
+    <div class="cert-list" data-reveal="up">
+      <div class="cert-row"><div><div class="cert-name">Social Media Marketing</div><div class="cert-org">Hootsuite Academy · No. 179205263</div></div><span class="cert-yr">2026</span></div>
+      <div class="cert-row"><div><div class="cert-name">GAIQ — Google Analytics Individual Qualification</div><div class="cert-org">Google</div></div><span class="cert-yr">2021</span></div>
+      <div class="cert-row"><div><div class="cert-name">GTQ Graphic Technology Qualification Level 1</div><div class="cert-org">Korea Productivity Center (KPC)</div></div><span class="cert-yr">2020</span></div>
+      <div class="cert-row"><div><div class="cert-name">GTQ Illustration Level 1</div><div class="cert-org">Korea Productivity Center (KPC)</div></div><span class="cert-yr">2021</span></div>
+      <div class="cert-row"><div><div class="cert-name">MOS Excel 2016 Expert</div><div class="cert-org">YBM / Microsoft</div></div><span class="cert-yr">2021</span></div>
+      <div class="cert-row"><div><div class="cert-name">MOS PowerPoint 2016 · Word Expert</div><div class="cert-org">Microsoft</div></div><span class="cert-yr">2021</span></div>
+      <div class="cert-row"><div><div class="cert-name">CS Leaders Certificate</div><div class="cert-org">Korea Information Evaluation Association</div></div><span class="cert-yr">2021</span></div>
+      <div class="cert-row"><div><div class="cert-name">MICE Digital Planning Specialist</div><div class="cert-org">Korea MICE Association</div></div><span class="cert-yr">2021</span></div>
+      <div class="cert-row"><div><div class="cert-name">Korean History Proficiency Exam Level 1</div><div class="cert-org">National Institute of Korean History</div></div><span class="cert-yr">2020</span></div>
     </div>
   </div>
 </section>
@@ -208,6 +229,7 @@
   <p class="footer-cta">Let's build something <em>meaningful.</em></p>
   <p class="footer-bottom">© 2026 Miso Kang. All rights reserved.</p>
 </footer>
+
 <button class="back-top" id="bt" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <script src="motion.js"></script>

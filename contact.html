@@ -12,7 +12,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact · Miso Kang</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <meta name="description" content="Get in touch with Miso Kang — open to Marketing, Operations, and Brand Experience roles in Vancouver." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700;800&family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -20,12 +21,11 @@
 
 <!-- NAV -->
 <nav class="site-nav">
-  <a class="logo" href="index.html">Miso<span>.</span></a>
+  <a class="logo" href="index.html">MISO KANG</a>
   <ul class="nav-ul" id="nav">
-    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Work</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="work.html">Experience</a></li>
-    <li><a href="projects.html">Projects</a></li>
+    <li><a href="resume.html">Resume</a></li>
     <li><a href="contact.html" class="nav-cta active">Contact</a></li>
   </ul>
   <div class="burger" onclick="toggleNav()"><span></span><span></span><span></span></div>
@@ -34,8 +34,8 @@
 <!-- PAGE HEADER -->
 <div class="page-hero">
   <div class="w">
-    <div class="ph-breadcrumb">Home <span>/</span> Contact</div>
-    <h1 class="ph-title">Let's <em>talk</em></h1>
+    <div class="ph-breadcrumb"><a href="index.html">Home</a> <span>/</span> Contact</div>
+    <h1 class="ph-title" style="margin-top:1.1rem">Let's <em>talk</em></h1>
     <p class="ph-sub">Open to Marketing, Operations, and Brand Experience roles in Vancouver. If something here caught your attention, feel free to reach out.</p>
   </div>
 </div>
@@ -54,10 +54,10 @@
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
             Email
           </a>
-          <span class="reach-link is-pending" title="Resume PDF coming soon">
+          <a class="reach-link" href="resume.html">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
-            Resume — coming soon
-          </span>
+            Resume
+          </a>
           <span class="reach-link is-pending" title="LinkedIn link coming soon">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 9h4v2a4 4 0 0 1 4-2c3 0 4 2 4 5v7h-4v-6c0-2-1-3-2-3s-2 1-2 3v6h-4z"/></svg>
             LinkedIn — coming soon
@@ -124,12 +124,19 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="fl">Miso<span>.</span></div>
-  <p class="fc">© 2026 Miso Kang. All rights reserved.</p>
-  <nav class="flinks">
-    <a href="index.html">Home</a><a href="about.html">About</a>
-    <a href="work.html">Experience</a><a href="projects.html">Projects</a>
-  </nav>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="fl">MISO KANG</div>
+      <div class="footer-tagline">Marketing · Strategy · Data<br>Vancouver, BC</div>
+    </div>
+    <nav class="footer-links">
+      <a href="mailto:yejin263437@gmail.com">Email</a>
+      <a href="contact.html#resume" title="LinkedIn — coming soon">LinkedIn</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </div>
+  <p class="footer-cta">Let's build something <em>meaningful.</em></p>
+  <p class="footer-bottom">© 2026 Miso Kang. All rights reserved.</p>
 </footer>
 <button class="back-top" id="bt" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
 
