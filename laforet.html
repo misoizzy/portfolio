@@ -11,8 +11,8 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>La Forêt · Operations &amp; ERP System — Miso Kang</title>
-  <meta name="description" content="Case study: designing and building an internal ERP system for La Forêt's 3-branch café operation, and using it to analyze labor cost against revenue." />
+  <title>La Forêt — Operations & ERP Transformation · Miso Kang</title>
+  <meta name="description" content="From manual, document-based operations to a centralized, data-driven operating system — ERP design, sales automation, workforce analytics, and product profitability at La Forêt." />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -32,169 +32,203 @@
   <div class="burger" onclick="toggleNav()"><span></span><span></span><span></span></div>
 </nav>
 
-<!-- CASE STUDY HERO -->
+<!-- HERO -->
 <div class="cs-hero">
   <div class="w">
     <div class="ph-breadcrumb"><a href="index.html">Home</a> <span>/</span> <a href="projects.html">Projects</a> <span>/</span> La Forêt</div>
-    <div class="cs-hero-org" style="margin-top:1.1rem">La Forêt · Operations &amp; Brand Strategy — May 2026 – Present</div>
-    <h1 class="cs-hero-title">Operations &amp; ERP System — bringing sales, labor, and store performance into one place</h1>
-    <p class="cs-hero-sub">A 3-location fusion café brand ran on spreadsheets and group chats. Here's how I found the gap, built the system to close it, and used the data to change how the business staffs its branches.</p>
-    <div class="cs-meta-row" data-reveal="up">
-      <div><div class="cs-meta-lbl">Role</div><div class="cs-meta-val">Operations &amp; Brand Strategy</div></div>
-      <div><div class="cs-meta-lbl">Scope</div><div class="cs-meta-val">ERP design · Process improvement · Data analysis</div></div>
-      <div><div class="cs-meta-lbl">Branches</div><div class="cs-meta-val">3 — Metro Vancouver &amp; Burnaby</div></div>
-      <div><div class="cs-meta-lbl">Status</div><div class="cs-meta-val">Piloted → rolling out company-wide</div></div>
+    <div class="cs-hero-org" style="margin-top:1.1rem">LA FORÊT</div>
+    <h1 class="cs-hero-title">Operations &amp; ERP Transformation</h1>
+    <p class="cs-hero-sub" style="margin-bottom:.9rem">From manual, document-based operations to a centralized, data-driven operating system.</p>
+    <p class="cs-hero-sub">I designed and implemented an internal operational system that centralized orders, workforce data, sales reporting, and product profitability analysis across multiple branches.</p>
+
+    <div class="hero-kpi-row" data-reveal="up">
+      <div class="hero-kpi"><div class="hero-kpi-val">3</div><div class="hero-kpi-lbl">Branches</div></div>
+      <div class="hero-kpi"><div class="hero-kpi-val" data-count-to="9000" data-count-suffix="+">0</div><div class="hero-kpi-lbl">Weekly Orders</div></div>
+      <div class="hero-kpi"><div class="hero-kpi-val">$224K+</div><div class="hero-kpi-lbl">Weekly Sales</div></div>
     </div>
+    <div class="hero-kpi-note">Current dashboard snapshot</div>
   </div>
 </div>
 
-<!-- 01 CONTEXT -->
+<!-- THE CHALLENGE -->
 <section class="cs-section section--cream">
   <div class="w">
-    <div class="cs-num" data-reveal="up">01 · Context</div>
-    <h2 class="cs-h" data-reveal="up" data-delay=".05">A 3-branch café brand, growing faster than its systems</h2>
-    <p class="cs-p" data-reveal="up" data-delay=".1">La Forêt is a fusion café brand with three locations across Metro Vancouver and Burnaby. I joined as Marketing Coordinator / HQ Operations — a role that sits across both brand marketing and day-to-day operations, which meant I was close enough to every branch to see where the business was actually losing time and visibility.</p>
-    <p class="cs-p" data-reveal="up" data-delay=".15">This case study covers the part of that role that maps most directly onto Operations, Business Analyst, and Brand Experience work: identifying an operational gap, designing a system to close it, and using the resulting data to inform real staffing decisions.</p>
+    <div class="cs-num" data-reveal="up">The Challenge</div>
+    <p class="cs-p" data-reveal="up" data-delay=".05">Operations were previously managed through manual documents and disconnected workflows, creating data inconsistencies and limited visibility into labor efficiency, sales performance, and product profitability.</p>
+    <ul class="tight-list" data-reveal="up" data-delay=".1">
+      <li>Manual data entry created inconsistencies and errors</li>
+      <li>Weekly reporting required manual consolidation</li>
+      <li>Labor and sales data were difficult to evaluate together</li>
+      <li>Product-level COGS and margin were not systematically tracked</li>
+    </ul>
   </div>
 </section>
 
-<!-- 02 BUSINESS PROBLEM -->
+<!-- MY ROLE -->
 <section class="cs-section">
   <div class="w">
-    <div class="cs-num" data-reveal="up">02 · Business Problem</div>
-    <h2 class="cs-h" data-reveal="up" data-delay=".05">No shared visibility across branches</h2>
-    <p class="cs-p" data-reveal="up" data-delay=".1">Day-to-day operations — order tracking, staff scheduling, supplier coordination, and performance reporting — relied on fragmented, manual workflows: spreadsheets, group chats, and paper logs kept separately by each branch.</p>
-    <p class="cs-p" data-reveal="up" data-delay=".15"><strong>There was no single source of truth.</strong> HQ had no real-time way to see labor cost, order status, or performance across branches, which made it difficult to catch inefficiencies early or compare how locations were actually performing against each other.</p>
+    <div class="cs-num" data-reveal="up">My Role</div>
+    <p class="cs-p" data-reveal="up" data-delay=".05" style="font-weight:600;color:var(--ink)">Operations · Systems · Data Analytics</p>
+    <ul class="tight-list" data-reveal="up" data-delay=".1">
+      <li>Mapped existing workflows</li>
+      <li>Designed the ERP structure</li>
+      <li>Automated recurring reporting</li>
+      <li>Built labor and workforce analysis</li>
+      <li>Developed product costing and margin logic</li>
+    </ul>
   </div>
 </section>
 
-<!-- 03 MY ROLE -->
+<!-- 01 CENTRALIZED ERP -->
 <section class="cs-section section--cream">
   <div class="w">
-    <div class="cs-num" data-reveal="up">03 · My Role</div>
-    <h2 class="cs-h" data-reveal="up" data-delay=".05">I wasn't hired to build a system — I noticed one was missing</h2>
-    <p class="cs-p" data-reveal="up" data-delay=".1">My role spans marketing and HQ operations, not software development. But that position meant I saw the same visibility gap from both sides — trying to plan brand initiatives without reliable operational data, and watching branch managers re-enter the same information into three different places.</p>
-    <p class="cs-p" data-reveal="up" data-delay=".15">I proposed and led the internal ERP build myself, end to end: scoping what data actually needed to exist, designing the structure, building it, and running the pilot — alongside my existing marketing and brand responsibilities, not instead of them.</p>
-  </div>
-</section>
-
-<!-- 04 PROCESS -->
-<section class="cs-section">
-  <div class="w">
-    <div class="cs-num" data-reveal="up">04 · Process</div>
-    <h2 class="cs-h" data-reveal="up" data-delay=".05">Requirements → build → pilot → fix → roll out</h2>
-    <div class="ms-grid" data-reveal="up" data-delay=".1">
-      <div class="ms-card"><div class="ms-card-title">1. Map the gap</div><div class="ms-card-desc">Talked to branch managers and HQ to find out what information was missing, duplicated, or too slow to reach the people who needed it.</div></div>
-      <div class="ms-card"><div class="ms-card-title">2. Structure the data</div><div class="ms-card-desc">Defined the core modules needed — orders, branches, team, suppliers, sales, labor — and how they should connect to each other.</div></div>
-      <div class="ms-card"><div class="ms-card-title">3. Build &amp; pilot</div><div class="ms-card-desc">Built the store-to-HQ ordering system first and piloted it at a single branch before touching the others.</div></div>
-      <div class="ms-card"><div class="ms-card-title">4. Fix &amp; roll out</div><div class="ms-card-desc">Used pilot feedback to fix issues (e.g. cart not clearing after an emergency re-send) before rolling out company-wide.</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- 05 SOLUTION -->
-<section class="cs-section section--cream">
-  <div class="w">
-    <div class="cs-num" data-reveal="up">05 · Solution</div>
-    <h2 class="cs-h" data-reveal="up" data-delay=".05">One internal system instead of five disconnected habits</h2>
-    <p class="cs-p" data-reveal="up" data-delay=".1">I designed and built an internal ERP system from the ground up to centralize operational information — giving HQ and branch managers one place to see orders, staffing, suppliers, and performance across all three locations, instead of the previous mix of spreadsheets, group chats, and paper logs.</p>
-  </div>
-</section>
-
-<!-- 06 ERP SYSTEM -->
-<section class="cs-section">
-  <div class="w">
-    <div class="cs-num" data-reveal="up">06 · ERP System</div>
-    <h2 class="cs-h" data-reveal="up" data-delay=".05">Eight modules, one shared source of truth</h2>
-    <div class="ms-grid" data-reveal="up" data-delay=".1">
-      <div class="ms-card"><div class="ms-card-icon">🧾</div><div class="ms-card-title">Order Management</div><div class="ms-card-desc">Central log of store-to-HQ orders — status, quantities, and history — replacing scattered messages and paper order sheets.</div></div>
-      <div class="ms-card"><div class="ms-card-icon">🏬</div><div class="ms-card-title">Branch</div><div class="ms-card-desc">Per-location profiles and settings, so performance and staffing can be tracked and compared branch by branch.</div></div>
-      <div class="ms-card"><div class="ms-card-icon">👥</div><div class="ms-card-title">Team</div><div class="ms-card-desc">Staff records and role assignments per branch, feeding directly into the labor-cost analysis.</div></div>
-      <div class="ms-card"><div class="ms-card-icon">📦</div><div class="ms-card-title">Supplier</div><div class="ms-card-desc">Supplier and pricing information centralized in one place instead of living in individual managers' inboxes.</div></div>
-      <div class="ms-card"><div class="ms-card-icon">📊</div><div class="ms-card-title">Dashboard</div><div class="ms-card-desc">At-a-glance operational overview for HQ — the first time these signals existed on one screen instead of scattered files.</div></div>
-      <div class="ms-card"><div class="ms-card-icon">🕒</div><div class="ms-card-title">Employee / Labor</div><div class="ms-card-desc">Hours and labor cost tracked per employee and per branch — the core data source for the analysis below.</div></div>
-      <div class="ms-card"><div class="ms-card-icon">💰</div><div class="ms-card-title">Sales</div><div class="ms-card-desc">Revenue tracked per branch and period, structured to be compared directly against labor cost.</div></div>
-      <div class="ms-card"><div class="ms-card-icon">📑</div><div class="ms-card-title">Reports</div><div class="ms-card-desc">Structured exports for HQ review, replacing one-off manual report compilation.</div></div>
-    </div>
-    <div style="margin-top:1.3rem;padding:1.1rem 1.3rem;background:var(--paper);border:1px solid var(--line);border-radius:10px" data-reveal="up" data-delay=".15">
-      <div class="ms-card-title" style="margin-bottom:.35rem">Store → HQ Ordering System</div>
-      <p class="cs-p" style="margin-bottom:0;max-width:none">The first module built and piloted — now rolling out company-wide across all three locations. <em style="font-style:italic;color:var(--accent)">Screenshots pending: these are real production screens with live business data, currently being sanitized and reviewed with my manager before public use.</em></p>
-    </div>
-  </div>
-</section>
-
-<!-- 07 DATA ANALYSIS -->
-<section class="cs-section section--navy">
-  <div class="w">
-    <div class="cs-num" data-reveal="up">07 · Data Analysis</div>
-    <h2 class="cs-h cs-h--white" data-reveal="up" data-delay=".05">Is each branch staffed for the revenue it makes?</h2>
-    <p class="cs-p cs-p--white" data-reveal="up" data-delay=".1">With operational data centralized, I built a labor-cost-vs-revenue analysis to answer a question HQ previously had no way to answer. The analysis follows a consistent flow — from raw numbers to a specific staffing decision:</p>
+    <div class="cs-num" data-reveal="up">01</div>
+    <h2 class="cs-h" data-reveal="up" data-delay=".05">Centralized ERP</h2>
+    <p class="cs-p" data-reveal="up" data-delay=".1">I designed and implemented an internal ERP system to centralize operational data across branches.</p>
 
     <div class="flow-row" data-reveal="up" data-delay=".15">
-      <div class="flow-node"><div class="flow-node-label">Order</div></div>
+      <div class="flow-node"><div class="flow-node-label">Orders</div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node"><div class="flow-node-label">Employees</div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node"><div class="flow-node-label">Inventory</div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node"><div class="flow-node-label">Suppliers</div></div>
       <div class="flow-arrow">→</div>
       <div class="flow-node"><div class="flow-node-label">Sales</div></div>
       <div class="flow-arrow">→</div>
-      <div class="flow-node"><div class="flow-node-label">Labor</div></div>
-      <div class="flow-arrow">→</div>
-      <div class="flow-node"><div class="flow-node-label">Cost</div></div>
-      <div class="flow-arrow">→</div>
-      <div class="flow-node" style="background:var(--accent)"><div class="flow-node-label">Performance</div></div>
-      <div class="flow-arrow">→</div>
-      <div class="flow-node" style="background:var(--accent)"><div class="flow-node-label">Decision</div></div>
+      <div class="flow-node" style="background:var(--accent)"><div class="flow-node-label">Reporting</div></div>
     </div>
 
-    <div class="ms-grid" data-reveal="up" data-delay=".2">
-      <div class="ms-card"><div class="ms-card-title">Revenue</div><div class="ms-card-desc">Pull sales by branch and period from the Sales module.</div></div>
-      <div class="ms-card"><div class="ms-card-title">Labor Cost</div><div class="ms-card-desc">Pull actual hours and wage cost by branch and period from the Employee / Labor module.</div></div>
-      <div class="ms-card"><div class="ms-card-title">Labor Cost %</div><div class="ms-card-desc">Calculate labor cost as a percentage of revenue — the core efficiency metric.</div></div>
-      <div class="ms-card"><div class="ms-card-title">Branch / Period Comparison</div><div class="ms-card-desc">Compare labor cost % across branches and time periods to spot outliers.</div></div>
-      <div class="ms-card"><div class="ms-card-title">Issue</div><div class="ms-card-desc">Identify where a branch or shift pattern runs an unusually high labor cost % relative to its revenue.</div></div>
-      <div class="ms-card"><div class="ms-card-title">Action</div><div class="ms-card-desc">Turn each flagged issue into a specific staffing or scheduling adjustment.</div></div>
+    <div class="shot" data-reveal="up" data-delay=".2">
+      <div class="shot-bar"><span class="shot-dot"></span><span class="shot-dot"></span><span class="shot-dot"></span></div>
+      <div class="shot-body"><b>ERP Order Management</b>Screenshot pending — sanitized production screen to be added</div>
     </div>
+    <div class="shot-cap">Live demo: <a class="btn-text" href="https://laforet-order-v2.vercel.app/admin/order" target="_blank" rel="noopener" style="display:inline-flex">laforet-order-v2.vercel.app/admin/order</a></div>
 
-    <p class="ms-title" style="color:var(--accent-lt);border-color:rgba(255,255,255,.12);margin-top:2.4rem" data-reveal="up">Live Dashboard — Structure Ready, Data Pending</p>
-    <div class="dash-grid" data-reveal="up" data-delay=".05">
-      <div class="dash-tile"><div class="dash-tile-lbl">Sales (period)</div><div class="dash-tile-val">—</div><div class="dash-pending">Data pending</div></div>
-      <div class="dash-tile"><div class="dash-tile-lbl">Labor Cost</div><div class="dash-tile-val">—</div><div class="dash-pending">Data pending</div></div>
-      <div class="dash-tile"><div class="dash-tile-lbl">Labor Cost %</div><div class="dash-tile-val">—</div><div class="dash-pending">Data pending</div></div>
-      <div class="dash-tile"><div class="dash-tile-lbl">Store Performance</div><div class="dash-tile-val">—</div><div class="dash-pending">Data pending</div></div>
-    </div>
-    <div class="dash-chart" data-reveal="up" data-delay=".1">
-      <div class="dash-chart-lbl">Labor Cost % by Branch — sample layout</div>
-      <div class="dash-bars">
-        <div class="dash-bar" style="height:38%"></div>
-        <div class="dash-bar" style="height:62%"></div>
-        <div class="dash-bar" style="height:48%"></div>
-        <div class="dash-bar" style="height:71%"></div>
-        <div class="dash-bar" style="height:55%"></div>
-        <div class="dash-bar" style="height:40%"></div>
-      </div>
-      <p class="dash-chart-note">This chart renders the real layout the dashboard will use once labor-cost and revenue figures are finalized — bar heights shown here are placeholders, not data.</p>
+    <div class="tools-wrap" data-reveal="up" data-delay=".25" style="margin-top:1.6rem">
+      <span class="tool">Order Management</span>
+      <span class="tool">Employee / Team Management</span>
+      <span class="tool">Inventory</span>
+      <span class="tool">Supplier</span>
+      <span class="tool">Sales</span>
+      <span class="tool">Reporting</span>
     </div>
   </div>
 </section>
 
-<!-- 08 RESULT / IMPACT -->
-<section class="cs-section section--cream">
-  <div class="w">
-    <div class="cs-num" data-reveal="up">08 · Result / Impact</div>
-    <h2 class="cs-h" data-reveal="up" data-delay=".05">From scattered files to one operational system</h2>
-    <p class="cs-p" data-reveal="up" data-delay=".1">The ERP replaced fragmented, manual tracking with a single operational system — giving HQ real-time visibility into orders, labor, and performance across all three branches for the first time. Findings from the labor-cost analysis are now informing staffing and scheduling adjustments, and the store-to-HQ ordering module has moved from a single-branch pilot to a company-wide rollout.</p>
-    <p class="cs-p" data-reveal="up" data-delay=".15">Quantified before/after results — labor cost % change, efficiency gains, hours of manual work removed per week — will be added here once the current rollout data is finalized. I'd rather show this case study with real numbers pending than fill the gap with estimates.</p>
-  </div>
-</section>
-
-<!-- 09 WHAT I LEARNED -->
+<!-- 02 CORE ANALYTICS & AUTOMATION -->
 <section class="cs-section">
   <div class="w">
-    <div class="cs-num" data-reveal="up">09 · What I Learned</div>
-    <h2 class="cs-h" data-reveal="up" data-delay=".05">The hard part wasn't the system — it was getting three branches to trust it</h2>
-    <p class="cs-p" data-reveal="up" data-delay=".1">Most operational problems aren't really technology problems — they're visibility problems. Building the ERP was the more straightforward half. The harder part was change management: getting three branches with different habits to move off familiar spreadsheets and group chats and trust a new shared system instead.</p>
-    <p class="cs-p" data-reveal="up" data-delay=".15">That's the skill I'd bring to an Operations Coordinator, Business Analyst, or Brand Experience role — not just the ability to design a system, but the patience to roll it out, fix what breaks during a pilot, and get a whole team to actually use it.</p>
-    <div style="margin-top:1.5rem" data-reveal="up" data-delay=".2">
-      <a class="btn-text" href="projects.html">Back to all projects</a>
+    <div class="cs-num" data-reveal="up">02</div>
+    <h2 class="cs-h" data-reveal="up" data-delay=".05">Core Analytics &amp; Automation</h2>
+
+    <div class="core-grid">
+
+      <!-- Sales Automation -->
+      <div class="core-card" data-reveal="up" data-delay="0">
+        <div class="core-title">Sales Automation</div>
+        <div class="core-desc">Automated recurring weekly sales reporting by consolidating order-level data into a standardized dashboard.</div>
+        <div class="kpi-mini-row">
+          <div class="kpi-mini"><div class="kpi-mini-val">$224,322.59</div><div class="kpi-mini-lbl">Net Sales</div></div>
+          <div class="kpi-mini"><div class="kpi-mini-val" data-count-to="9068">0</div><div class="kpi-mini-lbl">Completed Orders</div></div>
+          <div class="kpi-mini"><div class="kpi-mini-val">$24.74</div><div class="kpi-mini-lbl">AOV</div></div>
+          <div class="kpi-mini"><div class="kpi-mini-val is-down">−1.38%</div><div class="kpi-mini-lbl">WoW Change</div></div>
+        </div>
+        <div class="core-period">2026-08-17 – 2026-08-23</div>
+        <div class="core-note">Current dashboard snapshot</div>
+      </div>
+
+      <!-- Labor & Workforce Analytics -->
+      <div class="core-card" data-reveal="up" data-delay=".08">
+        <div class="core-title">Labor &amp; Workforce Analytics</div>
+        <div class="core-desc">Connected staffing, labor hours, sales, employee turnover, and tenure data to improve workforce visibility across branches.</div>
+        <div class="kpi-mini-row">
+          <div class="kpi-mini"><div class="kpi-mini-val" data-count-to="129">0</div><div class="kpi-mini-lbl">Workforce Records</div></div>
+          <div class="kpi-mini"><div class="kpi-mini-val" data-count-to="57">0</div><div class="kpi-mini-lbl">Exits</div></div>
+          <div class="kpi-mini"><div class="kpi-mini-val" data-count-to="76">0</div><div class="kpi-mini-lbl">Hires</div></div>
+          <div class="kpi-mini"><div class="kpi-mini-val" data-count-to="33.3" data-count-decimals="1" data-count-suffix="%">0%</div><div class="kpi-mini-lbl">90-Day Exit Share</div></div>
+        </div>
+        <div class="core-insight">Identified differences in turnover and tenure across branches.</div>
+        <div class="core-insight" style="margin-top:.5rem">Early exits represented 33.3% of completed exits during the analysis period.</div>
+      </div>
+
+      <!-- Product Profitability -->
+      <div class="core-card" data-reveal="up" data-delay=".16">
+        <div class="core-title">Product Profitability</div>
+        <div class="core-desc">Built a recipe-based costing framework to calculate item-level COGS and gross margin.</div>
+        <div class="core-flow-mini">Recipe → Ingredient Cost → COGS → Selling Price → Gross Margin</div>
+        <span class="example-tag">Example item</span>
+        <div class="shot" style="margin-bottom:1rem">
+          <div class="shot-bar"><span class="shot-dot"></span><span class="shot-dot"></span><span class="shot-dot"></span></div>
+          <div class="shot-body"><b>Banana Bread — Recipe Costing</b>Screenshot pending</div>
+        </div>
+        <div class="kpi-mini-row" style="margin-bottom:0">
+          <div class="kpi-mini"><div class="kpi-mini-val">$4.50</div><div class="kpi-mini-lbl">Selling Price</div></div>
+          <div class="kpi-mini"><div class="kpi-mini-val">$0.41</div><div class="kpi-mini-lbl">COGS</div></div>
+          <div class="kpi-mini"><div class="kpi-mini-val" data-count-to="91" data-count-suffix="%">0%</div><div class="kpi-mini-lbl">Gross Margin</div></div>
+          <div class="kpi-mini"><div class="kpi-mini-val" data-count-to="70" data-count-suffix="%">0%</div><div class="kpi-mini-lbl">Target GM</div></div>
+        </div>
+      </div>
+
     </div>
+  </div>
+</section>
+
+<!-- WHAT THIS ENABLED -->
+<section class="cs-section section--cream">
+  <div class="w">
+    <div class="cs-num" data-reveal="up">What This Enabled</div>
+    <div class="insight-row">
+      <div class="insight-item" data-reveal="up" data-delay="0">
+        <div class="insight-title">Centralized Data</div>
+        <div class="insight-desc">Previously fragmented operational information became accessible in one system.</div>
+      </div>
+      <div class="insight-item" data-reveal="up" data-delay=".06">
+        <div class="insight-title">Automated Reporting</div>
+        <div class="insight-desc">Recurring weekly reporting became standardized.</div>
+      </div>
+      <div class="insight-item" data-reveal="up" data-delay=".12">
+        <div class="insight-title">Operational Visibility</div>
+        <div class="insight-desc">Labor, workforce, sales, and product profitability could be evaluated more systematically.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="cs-section section--navy">
+  <div class="w">
+    <div class="cs-num" data-reveal="up">Impact</div>
+    <div class="impact-grid">
+      <div class="impact-card" data-reveal="up" data-delay="0">
+        <div class="impact-title">Centralized</div>
+        <div class="impact-flow">Fragmented operational data → centralized system</div>
+      </div>
+      <div class="impact-card" data-reveal="up" data-delay=".06">
+        <div class="impact-title">Automated</div>
+        <div class="impact-flow">Manual recurring reporting → standardized workflow</div>
+      </div>
+      <div class="impact-card" data-reveal="up" data-delay=".12">
+        <div class="impact-title">Workforce Visibility</div>
+        <div class="impact-flow">Labor, staffing, turnover, and tenure → measurable</div>
+      </div>
+      <div class="impact-card" data-reveal="up" data-delay=".18">
+        <div class="impact-title">Profitability Visibility</div>
+        <div class="impact-flow">Recipe-level costs → item-level margin tracking</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL TAKEAWAY -->
+<section class="cs-section section--cream" style="text-align:center;padding-top:90px;padding-bottom:70px">
+  <div class="w">
+    <h2 class="cs-h" data-reveal="up" style="margin:0 auto;max-width:none">From manual processes to <em style="font-family:var(--font-serif);font-style:italic;color:var(--accent)">measurable</em> operations.</h2>
+    <div style="margin-top:1.3rem" data-reveal="up" data-delay=".08">
+      <a class="btn-text" href="projects.html" style="justify-content:center">Back to all projects</a>
+    </div>
+    <p style="font-size:.7rem;color:var(--mute);margin-top:3rem;letter-spacing:.3px">Next.js · React · Express · TypeScript · Supabase PostgreSQL · Prisma</p>
   </div>
 </section>
 

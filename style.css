@@ -287,6 +287,55 @@ footer{background:var(--ink);padding:2.4rem 6%;display:flex;align-items:center;j
 .dash-chart-note{font-size:.72rem;color:var(--mute);margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line)}
 @media(max-width:900px){.dash-grid{grid-template-columns:repeat(2,1fr)}}
 
+/* ─── SCREENSHOT PLACEHOLDER FRAME ─── */
+.shot{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--white)}
+.shot-bar{height:34px;background:var(--paper);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:6px;padding:0 14px}
+.shot-dot{width:8px;height:8px;border-radius:50%;background:var(--line)}
+.shot-body{aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;background:repeating-linear-gradient(45deg,var(--paper) 0 12px,var(--white) 12px 24px);color:var(--mute);font-size:.8rem;text-align:center;padding:2rem}
+.shot-body b{color:var(--ink);font-size:.86rem;font-weight:700}
+.shot-cap{font-size:.7rem;color:var(--mute);text-align:center;margin-top:.6rem}
+
+.tight-list{list-style:none;display:flex;flex-direction:column;gap:.65rem;max-width:640px}
+.tight-list li{font-size:.85rem;color:var(--mute);padding-left:1.1rem;position:relative;line-height:1.6}
+.tight-list li::before{content:'—';position:absolute;left:0;color:var(--accent);font-weight:700}
+.core-flow-mini{font-size:.76rem;color:var(--ink-soft);font-weight:600;line-height:1.7;margin-bottom:1rem}
+
+/* ─── CORE WORK CARDS ─── */
+.core-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:1.6rem}
+.core-card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:1.6rem;display:flex;flex-direction:column}
+.core-title{font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--ink);margin-bottom:.6rem}
+.core-desc{font-size:.8rem;color:var(--mute);line-height:1.68;margin-bottom:1.1rem}
+.kpi-mini-row{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:1rem}
+.kpi-mini{background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:.7rem .8rem}
+.kpi-mini-val{font-family:var(--font-display);font-weight:700;font-size:1.05rem;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1.15}
+.kpi-mini-val.is-down{color:#C5453D}
+.kpi-mini-lbl{font-size:.62rem;color:var(--mute);text-transform:uppercase;letter-spacing:.5px;margin-top:.2rem}
+.core-period{font-size:.68rem;color:var(--mute);margin-bottom:.9rem}
+.core-note{font-size:.68rem;color:var(--mute);font-style:italic;margin-top:.3rem}
+.core-insight{font-size:.75rem;color:var(--ink-soft);line-height:1.6;background:var(--accent-dim);border-radius:8px;padding:.6rem .75rem;margin-top:.5rem}
+.example-tag{display:inline-block;font-size:.62rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--accent);background:var(--accent-dim);padding:.2rem .55rem;border-radius:50px;margin-bottom:.7rem}
+@media(max-width:900px){.core-grid{grid-template-columns:1fr}}
+
+/* ─── HERO KPI ROW (case study) ─── */
+.hero-kpi-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2rem 0 .6rem}
+.hero-kpi{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1.2rem;text-align:center}
+.hero-kpi-val{font-family:var(--font-display);font-weight:700;font-size:1.7rem;color:#fff;line-height:1;font-variant-numeric:tabular-nums}
+.hero-kpi-lbl{font-size:.68rem;color:rgba(255,255,255,.45);margin-top:.4rem}
+.hero-kpi-note{font-size:.64rem;color:rgba(255,255,255,.3);text-align:center;margin-top:.3rem}
+@media(max-width:700px){.hero-kpi-row{grid-template-columns:1fr}}
+
+/* ─── INSIGHT / IMPACT ROWS ─── */
+.insight-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:1.6rem}
+.insight-item{border-left:2px solid var(--accent);padding-left:1rem}
+.insight-title{font-size:.84rem;font-weight:700;color:var(--ink);margin-bottom:.3rem}
+.insight-desc{font-size:.76rem;color:var(--mute);line-height:1.6}
+.impact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.6rem}
+.impact-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1.3rem}
+.impact-title{font-size:.78rem;font-weight:700;color:#fff;margin-bottom:.5rem}
+.impact-flow{font-size:.76rem;color:rgba(255,255,255,.5);line-height:1.6}
+@media(max-width:900px){.insight-row{grid-template-columns:1fr};.impact-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.impact-grid{grid-template-columns:1fr}}
+
 /* ─── CASE STUDY NAV / HERO ─── */
 .cs-hero{background:var(--ink);padding:140px 6% 60px;position:relative;overflow:hidden}
 .cs-hero::before{content:'';position:absolute;top:-100px;right:-80px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(51,85,255,.16) 0%,transparent 70%);pointer-events:none}
