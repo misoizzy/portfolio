@@ -12,15 +12,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Experience · Miso Kang</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <style>
     /* ─── AD WORK DETAIL ─── */
-    #vworks{background:var(--navy);padding:80px 6%}
+    #vworks{background:var(--ink);padding:80px 6%}
     .vw-intro{display:flex;align-items:flex-start;justify-content:space-between;gap:2rem;margin-bottom:2.5rem;flex-wrap:wrap}
     .vw-badge{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1rem 1.5rem;display:inline-flex;align-items:center;gap:1rem;flex-shrink:0}
     .vw-logo{font-family:'DM Serif Display',serif;font-size:1.5rem;color:#fff;font-style:italic}
-    .vw-logo span{color:var(--blue)}
+    .vw-logo span{color:var(--accent)}
     .vw-sub{font-size:.72rem;color:rgba(255,255,255,.4);margin-top:.2rem}
   </style>
 </head>
@@ -28,7 +28,7 @@
 <div class="page-wrap">
 
 <!-- NAV -->
-<nav>
+<nav class="site-nav">
   <a class="logo" href="index.html">Miso<span>.</span></a>
   <ul class="nav-ul" id="nav">
     <li><a href="index.html">Home</a></li>
@@ -77,7 +77,7 @@
             <div class="tl-period">Aug 2023 — Dec 2024</div>
             <div class="tl-role">Marketing &amp; Consultant</div>
             <div class="tl-org">V WORKS (VMARK) · Daejeon</div>
-            <div class="tl-desc">Directed full-cycle marketing and brand initiatives for six F&amp;B and retail brands, supporting 9+ new store openings per month. Increased monthly lead generation by 600% (database growth from 500 to 3,000+) and reduced customer acquisition cost by 85% (₩20,000 → ₩3,000) through landing page optimization and data-driven campaign management — maintaining an 18% average conversion rate. Ran Meta, Google Ads (Search · GDN · YouTube Shorts) and <span class="nv">Naver</span> <span style="font-size:.72rem;color:var(--grey)">(Korea's #1 search engine, equiv. Google)</span> campaigns, writing proposals, tracking weekly CTR and lead data, and designing all ad creatives in Photoshop &amp; Illustrator.</div>
+            <div class="tl-desc">Directed full-cycle marketing and brand initiatives for six F&amp;B and retail brands, supporting 9+ new store openings per month. Increased monthly lead generation by 600% (database growth from 500 to 3,000+) and reduced customer acquisition cost by 85% (₩20,000 → ₩3,000) through landing page optimization and data-driven campaign management — maintaining an 18% average conversion rate. Ran Meta, Google Ads (Search · GDN · YouTube Shorts) and <span class="nv">Naver</span> <span style="font-size:.72rem;color:var(--mute)">(Korea's #1 search engine, equiv. Google)</span> campaigns, writing proposals, tracking weekly CTR and lead data, and designing all ad creatives in Photoshop &amp; Illustrator.</div>
             <div class="tl-tags"><span class="tl-tag">Meta Ads</span><span class="tl-tag">Google Search Ads</span><span class="tl-tag">GDN</span><span class="tl-tag">YouTube Shorts Ads</span><span class="tl-tag">Naver Keyword</span><span class="tl-tag">Ad Creative</span><span class="tl-tag">Reporting</span></div>
           </div>
           <div class="tl-item fade-in">
@@ -203,11 +203,6 @@
 </footer>
 <button class="back-top" id="bt" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-<script>
-function toggleNav(){document.getElementById('nav').classList.toggle('open')}
-addEventListener('scroll',()=>document.getElementById('bt').classList.toggle('show',scrollY>400));
-const fio=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');fio.unobserve(e.target)}})},{threshold:.06});
-document.querySelectorAll('.fade-in').forEach(el=>fio.observe(el));
-</script>
+<script src="motion.js"></script>
 </body>
 </html>
