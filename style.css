@@ -99,6 +99,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;padding:0 6%;dis
 .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
 .pcard{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;cursor:pointer;transition:.22s}
 .pcard:hover{border-color:var(--navy3);box-shadow:0 12px 36px rgba(12,30,60,.11);transform:translateY(-4px)}
+.pcard-featured{border:2px solid var(--navy3)}
+.pcard-featured-badge{position:absolute;top:.8rem;left:.8rem;font-size:.6rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;background:var(--blue);color:var(--navy);padding:.28rem .65rem;border-radius:50px;z-index:2}
 .pcard-thumb{height:160px;display:flex;flex-direction:column;justify-content:flex-end;padding:1.2rem;position:relative;overflow:hidden;background-size:cover;background-position:center}
 .t0{background:linear-gradient(145deg,#05111F 0%,#0C2952 60%,#1a3d6e 100%)}
 .t1{background:linear-gradient(145deg,#0C1E3C 0%,#1E4080 100%)}

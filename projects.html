@@ -45,6 +45,22 @@
   <div class="w">
     <div class="proj-grid">
 
+      <!-- 0. La Forêt ERP — Featured — 2025–Present -->
+      <div class="pcard fade-in pcard-featured" onclick="openModal('laforet_erp')">
+        <div class="pcard-thumb t0">
+          <span class="pcard-featured-badge">Featured Case Study</span>
+          <span class="pcard-thumb-yr">2025</span>
+          <span class="pcard-thumb-tag">ERP System · Operational Analysis · Process Improvement</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-org">La Forêt · Marketing Coordinator / HQ Operations — Present</div>
+          <h3 class="pcard-title">La Forêt | ERP System &amp; Operational Process Improvement</h3>
+          <p class="pcard-desc">La Forêt's day-to-day operations ran on fragmented, manual tracking — no shared way to see orders, labor costs, or performance across our three branches. I designed and built an internal ERP system to centralize that data, then used it to run a labor-cost-vs-revenue analysis that's now informing staffing and process changes company-wide.</p>
+          <div class="pcard-tags"><span class="ptag">ERP System Design</span><span class="ptag">Process Improvement</span><span class="ptag">Operational Analysis</span><span class="ptag">Change Management</span><span class="ptag">Project Management</span></div>
+          <div class="pcard-cta">View details</div>
+        </div>
+      </div>
+
       <!-- 1. UniSupplePack — 2026 -->
       <div class="pcard fade-in" onclick="openModal('unisupple')">
         <div class="pcard-thumb" style="background-image:linear-gradient(to bottom,rgba(30,50,80,.25) 0%,rgba(30,50,80,.82) 100%),url(uni_cover.jpg);background-size:cover;background-position:center top">
@@ -218,6 +234,71 @@ document.querySelectorAll('.fade-in').forEach(el=>fio.observe(el));
 
 /* ─── MODAL DATA ─── */
 const modals = {
+
+  laforet_erp: {
+    tag: 'Operations & Systems Design · ERP Build · 2025–Present',
+    title: 'La Forêt | ERP System & Operational Process Improvement',
+    org: 'La Forêt · Marketing Coordinator / HQ Operations — 3-location fusion café brand, Metro Vancouver & Burnaby',
+    body: `
+      <!-- NOTE TO MISO: Sections 02 and 05 are written to be honest and publish-ready as-is,
+           but should be upgraded once real inputs are available:
+           - 02: swap module description cards for real (sanitized/blurred, Jay-approved) screenshots
+           - 03/05: replace qualitative framing with real labor-cost-vs-revenue numbers once finalized -->
+
+      <div class="modal-section">
+        <div class="ms-title">01 · Business Problem</div>
+        <p class="ms-p">La Forêt runs three café locations across Metro Vancouver and Burnaby. Before this project, day-to-day operations — order tracking, staff scheduling, supplier coordination, and performance reporting — relied on fragmented, manual workflows: spreadsheets, group chats, and paper logs kept separately by each branch.</p>
+        <p class="ms-p">There was no single source of truth. HQ had no real-time way to see labor cost, order status, or performance across branches, which made it difficult to catch inefficiencies early or compare how locations were actually performing against each other.</p>
+      </div>
+
+      <div class="modal-section">
+        <div class="ms-title">02 · Solution</div>
+        <p class="ms-p">I designed and built an internal ERP system from the ground up to centralize this information — giving HQ and branch managers one place to see orders, staffing, suppliers, and performance across all three locations.</p>
+        <div class="ms-grid">
+          <div class="ms-card"><div class="ms-card-icon">🧾</div><div class="ms-card-title">Order Management</div><div class="ms-card-desc">Central log of store-to-HQ orders — status, quantities, and history — replacing scattered messages and paper order sheets.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🏬</div><div class="ms-card-title">Branch</div><div class="ms-card-desc">Per-location profiles and settings, so performance and staffing can be tracked and compared branch by branch.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">👥</div><div class="ms-card-title">Team</div><div class="ms-card-desc">Staff records and role assignments per branch, feeding directly into the labor-cost analysis below.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">📦</div><div class="ms-card-title">Supplier</div><div class="ms-card-desc">Supplier and pricing information centralized in one place instead of living in individual managers' inboxes.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">📊</div><div class="ms-card-title">Dashboard</div><div class="ms-card-desc">At-a-glance operational overview for HQ — the first time these signals existed in one screen instead of scattered files.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">🕒</div><div class="ms-card-title">Employee / Labor</div><div class="ms-card-desc">Hours and labor cost tracked per employee and per branch — the core data source for Section 03 below.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">💰</div><div class="ms-card-title">Sales</div><div class="ms-card-desc">Revenue tracked per branch and period, structured to be compared directly against labor cost.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">📑</div><div class="ms-card-title">Reports</div><div class="ms-card-desc">Structured exports for HQ review, replacing one-off manual report compilation.</div></div>
+        </div>
+        <div style="margin-top:1rem;padding:1rem 1.2rem;background:var(--cream);border:1px solid var(--border);border-radius:10px">
+          <div class="ms-card-title" style="margin-bottom:.35rem">Store → HQ Ordering System</div>
+          <p class="ms-p" style="margin-bottom:0">As part of this build, I also led the internal store-to-HQ ordering system — piloted at a single branch, tested through several rounds of fixes, and now rolling out company-wide across all three locations.</p>
+        </div>
+      </div>
+
+      <div class="modal-section">
+        <div class="ms-title">03 · Operational Analysis</div>
+        <p class="ms-p">With operational data now centralized, I built a labor-cost-vs-revenue analysis to answer a question HQ previously had no way to answer: is each branch staffed appropriately for the revenue it's generating? The analysis follows a consistent flow:</p>
+        <div class="ms-grid">
+          <div class="ms-card"><div class="ms-card-icon">1️⃣</div><div class="ms-card-title">Revenue</div><div class="ms-card-desc">Pull sales by branch and period from the Sales module.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">2️⃣</div><div class="ms-card-title">Labor Cost</div><div class="ms-card-desc">Pull actual hours and wage cost by branch and period from the Employee / Labor module.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">3️⃣</div><div class="ms-card-title">Labor Cost %</div><div class="ms-card-desc">Calculate labor cost as a percentage of revenue — the core efficiency metric.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">4️⃣</div><div class="ms-card-title">Branch / Period Comparison</div><div class="ms-card-desc">Compare labor cost % across branches and across time periods to spot outliers.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">5️⃣</div><div class="ms-card-title">Issue</div><div class="ms-card-desc">Identify where a branch or shift pattern is running an unusually high labor cost % relative to its revenue.</div></div>
+          <div class="ms-card"><div class="ms-card-icon">6️⃣</div><div class="ms-card-title">Action</div><div class="ms-card-desc">Turn each flagged issue into a specific staffing or scheduling adjustment — feeding directly into Section 04.</div></div>
+        </div>
+      </div>
+
+      <div class="modal-section">
+        <div class="ms-title">04 · Process Improvement</div>
+        <p class="ms-p">I used the findings from the labor-cost analysis to improve staffing and operational processes — matching shift coverage more closely to actual demand by branch and day-part, and flagging labor cost outliers for manager review instead of relying on gut feel. The same centralized data is also changing how branches place and track HQ orders, replacing the old manual, message-based process with a single tracked system.</p>
+      </div>
+
+      <div class="modal-section">
+        <div class="ms-title">05 · Result</div>
+        <p class="ms-p">The ERP replaced fragmented, manual tracking with a single operational system — giving HQ real-time visibility into orders, labor, and performance across all three branches for the first time, and creating the data foundation the staffing and process changes in Section 04 are based on.</p>
+        <p class="ms-p" style="margin-bottom:0">Quantified before/after results (labor cost % change, efficiency gains, hours of manual work removed per week) will be added here once the current rollout data is finalized.</p>
+      </div>
+
+      <div class="modal-section">
+        <div class="ms-title">Skills Applied</div>
+        <div class="ms-tags"><span class="ms-tag">ERP System Design</span><span class="ms-tag">Data Structuring</span><span class="ms-tag">Labor Cost Analysis</span><span class="ms-tag">Process Improvement</span><span class="ms-tag">Change Management</span><span class="ms-tag">Project Management</span><span class="ms-tag">Cross-Branch Operations</span><span class="ms-tag">Requirements Gathering</span></div>
+      </div>`
+  },
 
   vworks_campaigns: {
     tag: 'Multi-Channel Performance Marketing · Aug 2023 – Dec 2024',
